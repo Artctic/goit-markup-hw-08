@@ -2,6 +2,10 @@
   background: #ffffff;
   color: rgba(117, 117, 117, 1);
 }
+
+.logo {
+  color: #2196f3;
+}
 /* Цвет заголовков h2 и h3 background и навигации: #212121; */
 /* Цвет вторичного текста мелкого(серый) background: #757575 */
 /* Белый #FFFFFF */
