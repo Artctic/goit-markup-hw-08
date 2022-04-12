@@ -1,12 +1,50 @@
-.page {
-  background: #ffffff;
-  color: rgba(117, 117, 117, 1);
+/* Весь синий (background: #2196F3; */
+/* Цвет заголовков h2 и h3 и навигации: #212121; */
+/* Цвет вторичного текста мелкого (серый) background: #757575 */
+/* Белый #FFFFFF */
+/* цвет кнопок #F5F4FA и фона в секции */
+/* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
+
+/* CSS переменные */
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #f5f4fa;
 }
 
-.logo {
-  color: #2196f3;
+.page {
+  background: #ffffff;
+  /* весь вторичный шрифт */
+  color: var(--primary-text-color);
 }
-/* Цвет заголовков h2 и h3 background и навигации: #212121; */
-/* Цвет вторичного текста мелкого(серый) background: #757575 */
-/* Белый #FFFFFF */
-/* Акцент (синий) background: #2196F3; */
+
+.list {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--accent-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+/* features */
+
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* .button {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+} */
