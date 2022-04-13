@@ -54,6 +54,11 @@
   color: var(--accent-color);
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 /* Hero */
 
 .hero-title {
@@ -79,9 +84,21 @@
 .button {
   color: var(--title-text-color);
   background-color: var(--section-bt-color);
+  cursor: pointer;
 }
-
+/* Кнопка "Заказасть услугу" */
 .button.primary {
   color: var(--white-background-color);
   background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-background-color);
+  background-color: var(--accent-color);
+}
+
+/* Наши услуги */
+.services-list .title {
+  color: var(--title-text-color);
 }
