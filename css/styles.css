@@ -70,6 +70,10 @@
 .features-list .title {
   color: var(--title-text-color);
 }
+/* Team (Наша команда) */
+.team-list .title {
+  color: var(--title-text-color);
+}
 
 /* Button Кнопки */
 .button {
