@@ -21,7 +21,7 @@
   /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
   --footer-adres-text: rgba(255, 255, 255, 0.6);
   /* Белый фоновый цвет */
-  --white-background-color: #FFFFFF;
+  --white-background-color: #ffffff;
 }
 
 /* body */
@@ -41,7 +41,7 @@
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover, 
+.site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
@@ -50,15 +50,13 @@
   color: var(--accent-color);
 }
 
-
-}
 .logo {
   color: var(--accent-color);
 }
 
 /* Hero */
 
-.hero-title{
+.hero-title {
   color: var(--white-background-color);
 }
 
@@ -70,7 +68,7 @@
 
 /* features (Список Преимуществ) */
 .features-list .title {
-  color: var(--title-text-color); 
+  color: var(--title-text-color);
 }
 
 /* Button Кнопки */
@@ -83,4 +81,3 @@
   color: var(--white-background-color);
   background-color: var(--accent-color);
 }
-
