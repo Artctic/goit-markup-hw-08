@@ -1,36 +1,60 @@
-/* Весь синий (background: #2196F3; */
-/* Цвет заголовков h2 и h3 и навигации: #212121; */
-/* Цвет вторичного текста мелкого (серый) background: #757575 */
-/* Белый #FFFFFF */
-/* цвет кнопок #F5F4FA и фона в секции */
+/* Cиний цвет (background: #2196F3; */
+/* Цвет заголовков и навигации: #212121; */
+/* Вторичный цвет текста (серый) background: #757575 */
+/* цвет кнопок и фона в секции #F5F4FA*/
+/* Вторичный цвет фона и footera #2F303A*/
 /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
+/* Белый #FFFFFF */
 
 /* CSS переменные */
 :root {
-  --title-text-color: #212121;
-  --primary-text-color: #757575;
+  /* Cиний цвет (background: #2196F3; */
   --accent-color: #2196f3;
-  --primary-bg-color: #f5f4fa;
+  /* Цвет заголовков и навигации: #212121; */
+  --title-text-color: #212121;
+  /* Вторичный цвет текста (серый) background: #757575 */
+  --primary-text-color: #757575;
+  /* Цвет кнопок и фона в секции #F5F4FA*/
+  --section-bt-color: #f5f4fa;
+  /* Вторичный цвет фона и footera #2F303A*/
+  --hero-footer-color: #2f303a;
+  /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
+  --footer-adres-text: rgba(255, 255, 255, 0.6);
+  /* Белый фоновый цвет */
+  --white-background-color: #FFFFFF;
 }
 
+/* body */
 .page {
-  background: #ffffff;
+  background-color: #ffffff;
   /* весь вторичный шрифт */
   color: var(--primary-text-color);
+  /* Добавить font-family Roboto */
 }
-
+/* Стили для сброса элемента  */
 .list {
   list-style: none;
 }
+
+/* Навигация */
 .site-nav .link {
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.site-nav .link:hover, .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+
 }
 .logo {
   color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title{
+  color: var(--white-background-color);
 }
 
 /* Section */
@@ -38,13 +62,19 @@
 .section-title {
   color: var(--title-text-color);
 }
-/* features */
 
+/* features (Список Преимуществ) */
 .features-list .title {
-  color: var(--title-text-color);
+  color: var(--title-text-color); 
 }
 
-/* .button {
+/* Button */
+.button {
   color: var(--title-text-color);
-  background-color: var(--primary-bg-color);
-} */
+  background-color: var(--section-bt-color);
+}
+
+.button.primary {
+  color: var(--white-background-color);
+  background-color: var(--accent-color);
+}
