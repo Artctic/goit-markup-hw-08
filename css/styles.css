@@ -41,7 +41,12 @@
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav .link:hover, 
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -68,7 +73,7 @@
   color: var(--title-text-color); 
 }
 
-/* Button */
+/* Button Кнопки */
 .button {
   color: var(--title-text-color);
   background-color: var(--section-bt-color);
@@ -78,3 +83,4 @@
   color: var(--white-background-color);
   background-color: var(--accent-color);
 }
+
