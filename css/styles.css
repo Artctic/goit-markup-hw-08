@@ -27,7 +27,7 @@
 /* body */
 .page {
   /* «С8» Указаны альтернативные варианты шрифта и тип семейства (без засечек) в конце перечисления font-family у элемента <body>. */
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Raleway';
   background-color: #ffffff;
   /* весь вторичный шрифт */
   color: var(--primary-text-color);
@@ -40,18 +40,16 @@
 
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
 }
 
 /* Навигация */
 .site-nav .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.8;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
@@ -77,10 +75,9 @@
 /* Hero */
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -96,10 +93,9 @@
 }
 /* Button "Заказасть услугу" */
 .button.order {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
 
   color: var(--white-background-color);
   background-color: var(--accent-color);
@@ -114,10 +110,8 @@
 /* Section */
 
 .section-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -125,18 +119,14 @@
 
 /* features (Список Преимуществ) */
 .features-list .title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .features-list .text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -144,32 +134,36 @@
 
 /* Team (Наша команда) */
 .team-list .title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--title-text-color);
 }
 
 .team-list .text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
 
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+/* footer */
+.address-link .link {
+}
+
+/* Portfolio */
+
 /* Наши услуги */
 .services-list .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
-/* footer */
-
-.address-link .link {
+.services-list p {
+  font-size: 16px;
 }

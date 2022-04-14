@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!-- Шапка сайта -->
     <header>
-      <nav class="nav">
+      <nav>
         <!-- Тег Span для другого цвета -->
-        <a href="./index.html" class="link">WebStudio</a>
+        <a href="./index.html" class="logo link">WebStudio</a>
         <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
         <ul class="site-nav list">
           <li><a href="./index.html" class="link">Студия</a></li>
@@ -21,18 +27,18 @@
         </ul>
       </nav>
 
-      <ul class="list">
+      <ul class="address-nav list">
         <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
     <main>
-      <section class="section">
+      <section class="Portfolio-section">
         <!-- Заголовок для семантики -->
         <h1 class="">Примеры работ</h1>
 
-        <ul>
+        <ul class="bt-list">
           <li class="list"><button type="button" class="button">Все</button></li>
           <li class="list"><button type="button" class="button">Веб-сайты</button></li>
           <li class="list"><button type="button" class="button">Приложения</button></li>
@@ -93,8 +99,8 @@
 
     <footer>
       <!-- Тег Span для другого цвета -->
-      <a href="" class="link">WebStudio</a>
-      <address>
+      <a href="" class="logo link">WebStudio</a>
+      <address class="">
         <ul>
           <li><a href="" class="link">г. Киев, пр-т Леси Украинки, 26</a></li>
           <!-- Ссылка на адрес электронной почты  -->
