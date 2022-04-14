@@ -1,8 +1,8 @@
 /* Cиний цвет (background: #2196F3; */
 /* Цвет заголовков и навигации: #212121; */
 /* Вторичный цвет текста (серый) background: #757575 */
-/* цвет кнопок и фона в секции #F5F4FA*/
-/* Вторичный цвет фона и footera #2F303A*/
+/* цвет кнопок и фона в секции #F5F4FA */
+/* Вторичный цвет фона и footera #2F303A */
 /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
 /* Белый #FFFFFF */
 
@@ -26,18 +26,33 @@
 
 /* body */
 .page {
+  /* «С8» Указаны альтернативные варианты шрифта и тип семейства (без засечек) в конце перечисления font-family у элемента <body>. */
+  font-family: 'Roboto';
   background-color: #ffffff;
   /* весь вторичный шрифт */
   color: var(--primary-text-color);
-  /* Добавить font-family Roboto */
 }
+
 /* Стили для сброса элемента  */
 .list {
   list-style: none;
 }
 
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
 /* Навигация */
 .site-nav .link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
@@ -62,32 +77,30 @@
 /* Hero */
 
 .hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #212121;
   color: var(--white-background-color);
 }
 
-/* Section */
-
-.section-title {
-  color: var(--title-text-color);
-}
-
-/* features (Список Преимуществ) */
-.features-list .title {
-  color: var(--title-text-color);
-}
-/* Team (Наша команда) */
-.team-list .title {
-  color: var(--title-text-color);
-}
-
-/* Button Кнопки */
+/* Button */
 .button {
   color: var(--title-text-color);
   background-color: var(--section-bt-color);
   cursor: pointer;
 }
-/* Кнопка "Заказасть услугу" */
-.button.primary {
+/* Button "Заказасть услугу" */
+.button.order {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
   color: var(--white-background-color);
   background-color: var(--accent-color);
 }
@@ -98,7 +111,65 @@
   background-color: var(--accent-color);
 }
 
+/* Section */
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* features (Список Преимуществ) */
+.features-list .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-list .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* Team (Наша команда) */
+.team-list .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-list .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Наши услуги */
 .services-list .title {
   color: var(--title-text-color);
+}
+
+/* footer */
+
+.address-link .link {
 }
