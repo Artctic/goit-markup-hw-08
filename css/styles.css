@@ -150,6 +150,7 @@
   line-height: 1.7;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 }
 
@@ -174,6 +175,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--title-text-color);
 }
 
@@ -185,5 +187,4 @@
 
 /* footer */
 .address-link .link {
-  style: none;
 }
