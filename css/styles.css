@@ -29,6 +29,7 @@
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  line-height: 1.71;
 
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -39,24 +40,30 @@
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+  /* Отменить ссылке цвет или прописать */
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.logo .accent {
   color: var(--accent-color);
 }
 
 /* Навигация(Кнопки) */
 .site-nav .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 0.8;
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
-  /* font-family: inherit; - чтобы кнопки унаследовали шрифт  */
 }
 
 .site-nav .link:hover,
@@ -68,15 +75,16 @@
   color: var(--accent-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
-.contacts {
+.contacts .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -87,8 +95,12 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: #212121;
   color: var(--white-background-color);
+
+  /*Фон для видимости */
+  background-color: aqua;
 }
 
 /* Button */
@@ -96,6 +108,7 @@
   color: var(--title-text-color);
   background-color: var(--section-bt-color);
   cursor: pointer;
+  font-family: inherit;
 }
 
 /* Button "Заказасть услугу" */
@@ -122,23 +135,15 @@
 .features-list .title {
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--title-text-color);
-}
-
-.features-list .text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 .section-title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
@@ -147,9 +152,7 @@
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.7;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
@@ -158,7 +161,6 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Portfolio */
@@ -179,12 +181,21 @@
   color: var(--title-text-color);
 }
 
-.services-list p {
+.services-list .text {
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
-.address-link .link {
+.address-list .list {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+
+.street {
+  color: var(--white-background-color);
+}
+.Footer.logo {
+  color: #ffffff;
 }
