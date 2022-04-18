@@ -92,6 +92,11 @@
 
 /* Hero */
 
+/*Фон для видимости */
+.hero {
+  background-color: aqua;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -102,9 +107,6 @@
 
   color: var(--title-text-color);
   color: var(--white-background-color);
-
-  /*Фон для видимости */
-  background-color: aqua;
 }
 
 /* Button */
