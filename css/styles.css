@@ -45,6 +45,8 @@
   /* Отменить ссылке цвет или прописать */
 }
 
+/* Логотип */
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -55,6 +57,10 @@
 
 .logo .accent {
   color: var(--accent-color);
+}
+
+.Footer.logo {
+  color: #ffffff;
 }
 
 /* Навигация(Кнопки) */
@@ -80,11 +86,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 /* Hero */
@@ -119,12 +120,6 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--white-background-color);
-  background-color: var(--accent-color);
-}
-
-.button:hover,
-.button:focus {
   color: var(--white-background-color);
   background-color: var(--accent-color);
 }
@@ -164,7 +159,6 @@
 }
 
 /* Portfolio */
-
 .filter-list button {
   font-weight: 500;
   font-size: 16px;
@@ -187,15 +181,30 @@
 }
 
 /* footer */
+
+/* Опционально для видимости (серый фон футера) */
+.background {
+  background-color: #2f303a;
+}
+
 .address-list .list {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
 }
 
 .street {
   color: var(--white-background-color);
 }
-.Footer.logo {
-  color: #ffffff;
+
+/* Настройки наведения интерактивных элементов (ссылки и кнопки) */
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-background-color);
+  background-color: var(--accent-color);
 }
