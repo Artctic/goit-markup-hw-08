@@ -35,6 +35,10 @@
   color: var(--primary-text-color);
 }
 
+.title {
+  color: var(--title-text-color);
+}
+
 /* Стили для сброса элемента  */
 .list {
   list-style: none;
@@ -50,7 +54,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .logo .accent {
@@ -58,7 +62,7 @@
 }
 
 .Footer.logo {
-  color: #ffffff;
+  color: var(--white-background-color);
 }
 
 /* Навигация(Кнопки) */
@@ -87,6 +91,7 @@
 }
 
 /* Hero */
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -95,7 +100,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--title-text-color);
   color: var(--white-background-color);
 
   /*Фон для видимости */
@@ -129,8 +134,6 @@
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-
-  color: var(--title-text-color);
 }
 
 .section-title {
@@ -146,8 +149,6 @@
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-
-  color: var(--title-text-color);
 }
 
 .team-list .text {
@@ -169,8 +170,6 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  color: var(--title-text-color);
 }
 
 .services-list .text {
@@ -181,8 +180,8 @@
 /* footer */
 
 /* Опционально для видимости (серый фон футера) */
-.background {
-  background-color: #2f303a;
+.Footer-bg {
+  background-color: var(--hero-footer-color);
 }
 
 .address-list .list {
