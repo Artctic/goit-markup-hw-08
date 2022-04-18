@@ -8,15 +8,15 @@
 
 /* CSS переменные */
 :root {
-  /* Cиний цвет (background: #2196F3; */
+  /* Cиний цвет (background)*/
   --accent-color: #2196f3;
-  /* Цвет заголовков и навигации: #212121; */
+  /* Цвет заголовков и навигации*/
   --title-text-color: #212121;
-  /* Вторичный цвет текста (серый) background: #757575 */
+  /* Вторичный цвет текста (серый)*/
   --primary-text-color: #757575;
-  /* Цвет кнопок и фона в секции #F5F4FA*/
+  /* Цвет кнопок и фона в секции*/
   --section-bt-color: #f5f4fa;
-  /* Вторичный цвет фона и footera #2F303A*/
+  /* Вторичный цвет фона и footera*/
   --hero-footer-color: #2f303a;
   /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
   --footer-adres-text: rgba(255, 255, 255, 0.6);
@@ -31,7 +31,7 @@
   letter-spacing: 0.03em;
   line-height: 1.71;
 
-  background-color: #ffffff;
+  background-color: var(--white-background-color);
   color: var(--primary-text-color);
 }
 
