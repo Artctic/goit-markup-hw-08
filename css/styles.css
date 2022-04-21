@@ -24,6 +24,19 @@
   --white-background-color: #ffffff;
 }
 
+/* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
+
+/* Можно не указывать задан в нормализаторе  */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* body */
 .page {
   font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,12 +48,23 @@
   color: var(--primary-text-color);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  outline: 2px solid #33f321;
+  /* width: 1230px;
+  padding: 0, 15px; */
+}
+
 .title {
   color: var(--title-text-color);
 }
 
 /* Стили для сброса элемента  */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -63,6 +87,11 @@
 
 .Footer.logo {
   color: var(--white-background-color);
+}
+
+/* Page-header */
+.page-header {
+  background-color: #f32160;
 }
 
 /* Навигация(Кнопки) */
@@ -94,14 +123,21 @@
 
 /*Фон для видимости */
 .hero {
-  background-color: aqua;
+  background: #2f303a;
+
+  text-align: center;
 }
 
 .hero-title {
+  outline: #33f321;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -115,14 +151,21 @@
   background-color: var(--section-bt-color);
   cursor: pointer;
   font-family: inherit;
+  border-style: none;
 }
 
 /* Button "Заказасть услугу" */
 .button.order {
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
+
   letter-spacing: 0.06em;
 
   color: var(--white-background-color);
@@ -161,11 +204,17 @@
 
 /* Portfolio */
 .filter-list .button {
+  padding: 6px 22px;
+
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .services-list .title {

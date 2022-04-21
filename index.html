@@ -19,7 +19,10 @@
     <!-- Нормализация стилей это попытка решить данную проблему путём подключения ещё одного файла стилей, в котором исправлены все возможные расхождения между таблицами стилей браузеров. То есть это техника улучшения кроссбраузерности веб-страницы - одинакового отображения и работы сайта в различных браузерах. -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Файл стилей -->
@@ -28,23 +31,27 @@
 
   <body class="page">
     <!-- Шапка сайта -->
-    <header>
-      <nav>
-        <!-- Тег Span для другого цвета -->
-        <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
-        <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="container">
+        <nav>
+          <!-- Тег Span для другого цвета -->
+          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
+
+    <div class="container"></div>
 
     <!-- Hero -->
     <main>
