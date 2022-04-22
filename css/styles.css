@@ -52,7 +52,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
-  outline: 2px solid #33f321;
+  outline: 1px solid #33f321;
   /* width: 1230px;
   padding: 0, 15px; */
 }
@@ -70,6 +70,11 @@ html {
 
 .link {
   text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Логотип */
@@ -124,13 +129,11 @@ html {
 /*Фон для видимости */
 .hero {
   background: #2f303a;
-
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
-  outline: #33f321;
-
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -174,14 +177,15 @@ html {
 
 /* Section */
 
-/* features (Список Преимуществ) */
-.features-list .title {
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
+.section {
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 .section-title {
+  outline: 1px solid #33f321;
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -189,14 +193,43 @@ html {
   color: var(--title-text-color);
 }
 
+
+/* features (Список Преимуществ) */
+.features-list {
+  margin 0;
+  padding: 0;
+}
+
+
+.features-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+
+.features-list .text {
+  margin-top: 0;
+margin-bottom: 0;
+}
+
+
 /* Team (Наша команда) */
 .team-list .title {
+  margin-top: 0;
+margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   text-align: center;
 }
 
 .team-list .text {
+margin-top: 0;
+margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
