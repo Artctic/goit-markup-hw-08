@@ -27,9 +27,9 @@
 /* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
 
 /* Можно не указывать задан в нормализаторе  */
-html {
+/* html {
   box-sizing: border-box;
-}
+} */
 
 *,
 *::before,
@@ -52,7 +52,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
-  outline: 1px solid #33f321;
+  outline: 1px solid #f9fd05;
   /* width: 1230px;
   padding: 0, 15px; */
 }
@@ -72,7 +72,8 @@ html {
   text-decoration: none;
 }
 
-h2 {
+h2,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -96,7 +97,6 @@ h2 {
 
 /* Page-header */
 .page-header {
-  background-color: #f32160;
 }
 
 /* Навигация(Кнопки) */
@@ -130,7 +130,6 @@ h2 {
 .hero {
   background: #2f303a;
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -178,8 +177,13 @@ h2 {
 /* Section */
 
 .section {
-  margin-top: 0;
-  margin-bottom: 94px;
+  outline: 1px solid #212ff3;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
 }
 
 .section-title {
@@ -193,13 +197,11 @@ h2 {
   color: var(--title-text-color);
 }
 
-
 /* features (Список Преимуществ) */
 .features-list {
-  margin 0;
+  margin: 0;
   padding: 0;
 }
-
 
 .features-list .title {
   margin-top: 0;
@@ -209,17 +211,19 @@ h2 {
   text-transform: uppercase;
 }
 
-
 .features-list .text {
   margin-top: 0;
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
 /* Team (Наша команда) */
+.team-list {
+  margin-bottom: 0px;
+}
+
 .team-list .title {
   margin-top: 0;
-margin-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -227,8 +231,9 @@ margin-bottom: 10px;
 }
 
 .team-list .text {
-margin-top: 0;
-margin-bottom: 0;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.19;
