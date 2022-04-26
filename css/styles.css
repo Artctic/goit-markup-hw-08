@@ -52,9 +52,9 @@
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
-  outline: 3px solid #ff0101;
-  /* width: 1230px;
-  padding: 0, 15px; */
+  outline: 3px dashed red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .title {
@@ -72,27 +72,25 @@
   text-decoration: none;
 }
 
+h1,
 h2,
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
 
 /* Логотип */
+.accent {
+  color: var(--accent-color);
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--title-text-color);
-}
-
-.logo .accent {
-  color: var(--accent-color);
-}
-
-.Footer.logo {
-  color: var(--white-background-color);
 }
 
 /* Page-header */
@@ -177,7 +175,7 @@ ul {
 /* Section */
 
 .section {
-  outline: 1px solid #212ff3;
+  outline: 4px solid #212ff3;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -187,7 +185,7 @@ ul {
 }
 
 .section-title {
-  outline: 4px solid #33f321;
+  outline: 2px dotted green;
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -243,6 +241,7 @@ ul {
 /* Portfolio */
 .filter-list .button {
   padding: 6px 22px;
+  margin-bottom: 50px;
 
   display: inline-block;
   font-weight: 500;
@@ -268,17 +267,42 @@ ul {
 
 /* footer */
 
-/* Опционально для видимости (серый фон футера) */
 .Footer-bg {
   background-color: var(--hero-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.address-list .list {
+.Footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--white-background-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* .address-list .list {
+} */
+
+.address-list li {
+  margin-bottom: 9px;
+}
+
+.address-list .link {
+  display: inline-block;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  padding: 0;
 }
 
-.street {
+/* создать отдельный класс для сброса? */
+.link.no-margin {
+  margin: 0;
+}
+
+.wt-color {
   color: var(--white-background-color);
 }
 

@@ -23,145 +23,157 @@
     <!-- Файл стилей -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body class="page">
     <!-- Шапка сайта -->
-    <header>
-      <nav>
-        <!-- Тег Span для другого цвета -->
-        <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
-        <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="container">
+        <nav>
+          <!-- Тег Span для другого цвета -->
+          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link">Студия</a></li>
+            <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
-      <section class="Portfolio-section">
-        <!-- Заголовок для семантики -->
-        <h1 class="">Примеры работ</h1>
+      <section class="section">
+        <div class="container">
+          <!-- Заголовок для семантики -->
+          <h1 class="">Примеры работ</h1>
 
-        <ul class="filter-list">
-          <li class="list">
-            <button type="button" class="button">Все</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button">Веб-сайты</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button">Приложения</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button">Дизайн</button>
-          </li>
-          <li class="list">
-            <button type="button" class="button">Маркетинг</button>
-          </li>
-        </ul>
+          <ul class="filter-list">
+            <li class="list">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="list">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="list">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="list">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="list">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
 
-        <ul class="services-list">
-          <li class="list">
-            <a href="">
-              <img src="./images/img.jpg" alt="" width="370" />
-              <h2 class="title">Технокряк</h2>
-              <p class="text">Веб-сайт</p>
-            </a>
-          </li>
+          <ul class="services-list">
+            <li class="list">
+              <a href="">
+                <img src="./images/img.jpg" alt="" width="370" />
+                <h2 class="title">Технокряк</h2>
+                <p class="text">Веб-сайт</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-1.jpg" alt="" width="370" />
-              <h2 class="title">Постер New Orlean vs Golden Star</h2>
-              <p class="text">Дизайн</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-1.jpg" alt="" width="370" />
+                <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                <p class="text">Дизайн</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-2.jpg" alt="" width="370" />
-              <h2 class="title">Ресторан Seafood</h2>
-              <p class="text">Приложение</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-2.jpg" alt="" width="370" />
+                <h2 class="title">Ресторан Seafood</h2>
+                <p class="text">Приложение</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-3.jpg" alt="" width="370" />
-              <h2 class="title">Проект Prime</h2>
-              <p class="text">Маркетинг</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-3.jpg" alt="" width="370" />
+                <h2 class="title">Проект Prime</h2>
+                <p class="text">Маркетинг</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-4.jpg" alt="" width="370" />
-              <h2 class="title">Проект Boxes</h2>
-              <p class="text">Приложение</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-4.jpg" alt="" width="370" />
+                <h2 class="title">Проект Boxes</h2>
+                <p class="text">Приложение</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-5.jpg" alt="" width="370" />
-              <h2 class="title">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-5.jpg" alt="" width="370" />
+                <h2 class="title">Inspiration has no Borders</h2>
+                <p class="text">Веб-сайт</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-6.jpg" alt="" width="370" />
-              <h2 class="title">Издание Limited Edition</h2>
-              <p class="text">Дизайн</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-6.jpg" alt="" width="370" />
+                <h2 class="title">Издание Limited Edition</h2>
+                <p class="text">Дизайн</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-7.jpg" alt="" width="370" />
-              <h2 class="title">Проект LAB</h2>
-              <p class="text">Маркетинг</p>
-            </a>
-          </li>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-7.jpg" alt="" width="370" />
+                <h2 class="title">Проект LAB</h2>
+                <p class="text">Маркетинг</p>
+              </a>
+            </li>
 
-          <li class="list">
-            <a href="">
-              <img src="./images/img-8.jpg" alt="" width="370" />
-              <h2 class="title">Growing Business</h2>
-              <p class="text">Приложение</p>
-            </a>
-          </li>
-        </ul>
+            <li class="list">
+              <a href="">
+                <img src="./images/img-8.jpg" alt="" width="370" />
+                <h2 class="title">Growing Business</h2>
+                <p class="text">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="Footer-bg">
-      <!-- Тег Span для другого цвета -->
-      <a href="./index.html" class="Footer logo link"><span class="accent">Web</span>Studio</a>
-      <address class="address-list">
-        <ul class="list">
-          <li>
-            <a href="https://goo.gl/maps/2jLUbfk7e9V8cH5K9" class="street link"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <!-- Ссылка на адрес электронной почты  -->
-          <li>
-            <a href="mailto:info@example.com" class="list link">info@example.com</a>
-          </li>
-          <!-- Ссылка на телефонный номер -->
-          <li>
-            <a href="tel:+380991111111" class="list link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <!-- Тег Span для другого цвета -->
+        <a href="./index.html" class="Footer-logo link"><span class="accent">Web</span>Studio</a>
+        <address class="address-list">
+          <ul class="list">
+            <li>
+              <a
+                href="https://goo.gl/maps/2jLUbfk7e9V8cH5K9"
+                class="link"
+                class="link"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><span class="wt-color">г. Киев, пр-т Леси Украинки, 26</span></a
+              >
+            </li>
+            <!-- Ссылка на адрес электронной почты  -->
+            <li>
+              <a href="mailto:info@example.com" class="link">info@example.com</a>
+            </li>
+            <!-- Ссылка на телефонный номер -->
+            <li>
+              <a href="tel:+380991111111" class="link no-margin">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
