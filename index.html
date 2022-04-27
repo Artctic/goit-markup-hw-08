@@ -32,21 +32,23 @@
   <body class="page">
     <!-- Шапка сайта -->
     <header class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="nav">
           <!-- Тег Span для другого цвета -->
           <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
           <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -64,7 +66,7 @@
       <section class="section">
         <div class="container">
           <!-- Для семантики создаем заголовок, потом скроем (секция подразумевает наличие Заголовка) -->
-          <h2>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="list">
               <h3 class="title">Внимание к деталям</h3>
@@ -158,9 +160,9 @@
       <div class="container">
         <!-- Тег Span для другого цвета -->
         <a href="./index.html" class="Footer-logo link"><span class="accent">Web</span>Studio</a>
-        <address class="address-list">
-          <ul class="list">
-            <li>
+        <address>
+          <ul class="address-list">
+            <li class="item">
               <a
                 href="https://goo.gl/maps/2jLUbfk7e9V8cH5K9"
                 class="link"
@@ -170,12 +172,12 @@
               >
             </li>
             <!-- Ссылка на адрес электронной почты  -->
-            <li>
+            <li class="item">
               <a href="mailto:info@example.com" class="link">info@example.com</a>
             </li>
             <!-- Ссылка на телефонный номер -->
-            <li>
-              <a href="tel:+380991111111" class="link no-margin">+38 099 111 11 11</a>
+            <li class="item">
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>

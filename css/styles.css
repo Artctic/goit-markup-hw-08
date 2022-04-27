@@ -27,6 +27,7 @@
 /* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
 
 /* Можно не указывать задан в нормализаторе  */
+
 /* html {
   box-sizing: border-box;
 } */
@@ -39,7 +40,7 @@
 
 /* body */
 .page {
-  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.71;
@@ -51,7 +52,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   outline: 3px dashed red;
   padding-left: 15px;
   padding-right: 15px;
@@ -62,7 +63,20 @@
 }
 
 /* Стили для сброса элемента  */
-.list {
+h1,
+h2,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list,
+.address-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -72,12 +86,18 @@
   text-decoration: none;
 }
 
-h1,
-h2,
-ul,
-p {
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Логотип */
@@ -94,14 +114,37 @@ p {
 }
 
 /* Page-header */
-.page-header {
-}
 
 /* Навигация(Кнопки) */
+
+.main-nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  outline: 1px solid #fa0404;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
   font-weight: 500;
   line-height: 0.8;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
 }
@@ -113,6 +156,13 @@ p {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+}
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 .contacts .link {
@@ -165,7 +215,6 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
   letter-spacing: 0.06em;
 
   color: var(--white-background-color);
@@ -239,11 +288,19 @@ p {
 }
 
 /* Portfolio */
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list .list:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-list .button {
   padding: 6px 22px;
+  margin-top: 94px;
   margin-bottom: 50px;
-
-  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -253,6 +310,10 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+/* .services-list a {
+  display: flex;
+  flex-direction: column;
+} */
 
 .services-list .title {
   font-size: 18px;
@@ -283,10 +344,7 @@ p {
   display: inline-block;
 }
 
-/* .address-list .list {
-} */
-
-.address-list li {
+.address-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -295,11 +353,6 @@ p {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
-}
-
-/* создать отдельный класс для сброса? */
-.link.no-margin {
-  margin: 0;
 }
 
 .wt-color {
