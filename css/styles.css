@@ -118,15 +118,19 @@ img {
 /* Навигация(Кнопки) */
 
 .main-nav {
+  justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .item {
@@ -160,6 +164,7 @@ img {
 
 .contacts {
   display: flex;
+  margin-left: auto;
 }
 .contacts .item + .item {
   margin-left: 50px;
@@ -310,10 +315,28 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* .services-list a {
+.services-list {
+  /* Создаёт flex-контейнер, блочный или строчно-блочный, в зависимости от заданного значения, и устанавливает flex-контекст для всех детей (не потомков) контейнера, превращая их во flex-элементы. */
   display: flex;
-  flex-direction: column;
-} */
+  /* Flexbox это система расположения элементов в одном определённом направлении - горизонтально или вертикально. Свойство flex-direction устанавливает направление главной оси, определяя направление элементов в контейнере. */
+  flex-wrap: wrap;
+}
+
+.services-list .list {
+  width: 370px;
+  border: 1px solid #eeeeee;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.services-list .list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services-list .list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 
 .services-list .title {
   font-size: 18px;
