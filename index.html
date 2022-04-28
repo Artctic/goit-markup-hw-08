@@ -38,7 +38,7 @@
           <!-- Тег Span для другого цвета -->
           <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
           <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="item"><a href="./index.html" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
@@ -119,15 +119,17 @@
       </section>
 
       <!-- Наша команда -->
-      <section class="section">
+      <section class="section bg">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="list">
               <img src="./images/img1.jpg" alt="Фото дизайнера - Игорь Демьяненко" width="270" />
               <!-- Какое название селектора дать в css? -->
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="text">Product Designer</p>
+              <div class="container-text">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
             <li class="list">
               <img
@@ -135,8 +137,10 @@
                 alt="Фото Фронтенд-разработчика - Ольга Репина"
                 width="270"
               />
-              <h3 class="title">Ольга Репина</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="container-text">
+                <h3 class="title">Ольга Репина</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="list">
               <img
@@ -144,13 +148,17 @@
                 alt="Фото специалиста по маркетингу - Николай Тарасов"
                 width="270"
               />
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="text">Marketing</p>
+              <div class="container-text">
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="list">
               <img src="./images/img4.jpg" alt="Фото UI дизайнера - Михаил Ермаков" width="270" />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="text">UI Designer</p>
+              <div class="container-text">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

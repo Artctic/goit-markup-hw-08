@@ -71,21 +71,19 @@ p {
   padding: 0;
 }
 
-img {
-  display: block;
+ul {
+  list-style-type: none;
 }
 
-.list,
-.address-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+img {
+  display: block;
 }
 
 .link {
   text-decoration: none;
 }
 
+/* Для скрытых заголовков  */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -181,6 +179,12 @@ img {
 
 /*Фон для видимости */
 .hero {
+  /* Опционально для примера */
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  min-height: 600px;
+
   background: #2f303a;
   text-align: center;
 }
@@ -240,7 +244,6 @@ img {
 
 .section-title {
   outline: 2px dotted green;
-  margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
@@ -251,6 +254,7 @@ img {
 
 /* features (Список Преимуществ) */
 .features-list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -268,9 +272,34 @@ img {
   margin-bottom: 0;
 }
 
+.work-list {
+  display: flex;
+}
+
+.work-list .list {
+  margin-right: 30px;
+}
+
+.work-list .list:last-child {
+  margin-left: 0;
+}
+
 /* Team (Наша команда) */
+.section.bg {
+  background-color: #f5f4fa;
+}
+
 .team-list {
+  display: flex;
   margin-bottom: 0px;
+}
+
+.team-list .list {
+  margin-right: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -290,6 +319,12 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.container-text {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Portfolio */
@@ -342,11 +377,25 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  /* Узнать маргин или паддинг */
+  /* padding-left: 24px;
+  padding-top: 20px; */
 }
 
 .services-list .text {
+  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.88;
+
+  /* padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 20px; */
+}
+
+.text-block {
+  padding: 20px 24px;
 }
 
 /* footer */
