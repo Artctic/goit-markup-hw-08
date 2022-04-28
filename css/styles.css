@@ -180,16 +180,17 @@ img {
 /*Фон для видимости */
 .hero {
   /* Опционально для примера */
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  min-height: 600px;
-
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: #2f303a;
   text-align: center;
 }
 
 .hero-title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -255,8 +256,15 @@ img {
 /* features (Список Преимуществ) */
 .features-list {
   display: flex;
-  margin: 0;
-  padding: 0;
+}
+
+.features-list .list {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.features-list .list:last-child {
+  margin-right: 0;
 }
 
 .features-list .title {
