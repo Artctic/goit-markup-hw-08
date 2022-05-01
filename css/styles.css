@@ -181,9 +181,11 @@ img {
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Header.jpg);
-  background-size: cover;
+  background-color: var(--hero-footer-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 
   height: 600px;
   max-width: 1600px;
@@ -269,8 +271,28 @@ img {
   margin-right: 30px;
 }
 
-.features-list .list:nth-child(4n) {
-  margin-right: 0px;
+.features-list .list::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--section-bt-color);
+}
+
+/* benefits icons  */
+.icon-details::before {
+  background-image: url('../images/icons.svg/antenna.svg');
+}
+.icon-punctuality::before {
+  background-image: url('../images/icons.svg/clock.svg');
+}
+.icon-planning::before {
+  background-image: url('../images/icons.svg/diagram.svg');
+}
+.icon-technology::before {
+  background-image: url('../images/icons.svg/astronaut.svg');
 }
 
 .features-list .title {
@@ -300,7 +322,7 @@ img {
 
 /* Team (Наша команда) */
 .section.bg {
-  background-color: #f5f4fa;
+  background-color: var(--section-bt-color);
 }
 
 .team-list {
@@ -310,6 +332,8 @@ img {
 
 .team-list .list {
   margin-right: 30px;
+
+  background-color: var(--white-background-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -329,6 +353,12 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Клиенты */
+
+.client-title {
+  display: flex;
 }
 
 .container-text {
