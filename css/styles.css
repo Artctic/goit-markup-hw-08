@@ -174,12 +174,21 @@ img {
 
 /* Hero */
 
-/*Фон для видимости */
+/* Overlay */
 .hero {
-  /* Опционально для примера */
   padding-top: 200px;
   padding-bottom: 200px;
-  background: #2f303a;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 600px;
+  max-width: 1600px;
+
+  margin: 0 auto;
   text-align: center;
 }
 
