@@ -272,10 +272,15 @@ img {
   display: flex;
 }
 
+
 .features-list .list {
   /* calc ((100% - кол-во марджинов в строке) / количество элементов в строке); */
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+}
+
+.list-item:last-child {
+  margin-right: 0px;
 }
 
 /* .features-list .list::before {
@@ -319,7 +324,7 @@ img {
   margin-bottom: 0;
 }
 
-.icon-details .link {
+.list-item .link {
     display: flex;
 
     align-items: center;
