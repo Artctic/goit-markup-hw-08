@@ -330,9 +330,13 @@ img {
 
     background: #F5F4FA;
     border-radius: 4px;
-    
+
     margin-bottom: 30px;
 }
+
+/* .icon-details .link:hover,
+.icon-details .link:focus
+ {background: var();} */
 
 .features-item {
   /* width: 100%;
@@ -586,13 +590,11 @@ margin-right: 30px;
   border-radius: 50% 50%;
 }
 
-
 .soc-link:hover,
 .soc-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-
 
 .footer-bg .container {
   display: flex;
