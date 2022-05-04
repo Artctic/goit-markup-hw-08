@@ -22,6 +22,7 @@
   --footer-adres-text: rgba(255, 255, 255, 0.6);
   /* Белый фоновый цвет */
   --white-background-color: #ffffff;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
@@ -46,6 +47,8 @@
 
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
+
+  padding-top: 77px;
 }
 
 .container {
@@ -114,6 +117,14 @@ img {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  background-color: var(--white-background-color);
+    
+  position: fixed;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 77px;
 }
 
 /* Навигация(Кнопки) */
@@ -131,6 +142,10 @@ img {
 .site-nav {
   display: flex;
   margin-left: 93px;
+}
+
+.site-nav .item {
+  position: relative;
 }
 
 .site-nav .item:not(:last-child) {
@@ -158,6 +173,18 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .link.current::after {
+  content: '';
+  background-color: var(--accent-color);
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 2px;
+}
+
 .contact-item {
  fill: currentColor
 }
@@ -177,6 +204,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  /* transition: var(--transition); */
 }
 
 /* Hero */
@@ -227,6 +255,7 @@ img {
   cursor: pointer;
   font-family: inherit;
   border-style: none;
+  /* transition: var(--transition); */
 }
 
 /* Button "Заказасть услугу" */
@@ -354,7 +383,33 @@ img {
   display: flex;
 }
 
+.work-label {
+  padding: 27px;
+    position: absolute;
+    /* top: 75%; */
+    /* left: 50%; */
+    width: 370px;
+    height: 70px;
+    /* transform: translate( -50%); */
+    background: rgba(47, 48, 58, 0.8);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.work-label p {
+font-weight: 700;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
 .work-list .list {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
   margin-right: 30px;
 }
 
@@ -400,6 +455,7 @@ img {
 
 .icon {
   fill: #AFB1B8;
+  
 }
 
 .soc-link:hover .icon,
@@ -433,6 +489,7 @@ margin-right: 30px;
   fill: currentColor;
   justify-content: center;
   align-items: center;
+  /* transition: var(--transition); */
 }
 
 .client-link:hover,
@@ -490,6 +547,43 @@ margin-right: 30px;
 
   margin-right: 30px;
   margin-bottom: 30px;
+
+  /* transition: var(--transition); */
+}
+
+.action {
+  position: relative;
+  /* display: flex; */
+}
+
+.action:hover:before {
+  opacity: 1;
+}
+
+.action::before {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+
+  opacity: 0;
+}
+
+.action-text {
+font-size: 18px;
+line-height: 1.55;
+  /* top: 25%;
+  text-align: center; */
+  color: #ffffff;
+  position: absolute;
+  opacity: 0;
+  padding: 63px 24px;
+}
+
+.action:hover .action-text {
+  opacity: 1;
 }
 
 .services-list .list:hover {
@@ -593,6 +687,7 @@ margin-right: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 50% 50%;
+  /* transition: var(--transition); */
 }
 
 .soc-link:hover,
@@ -628,6 +723,69 @@ color: var(--white-background-color);
 margin-bottom: 20px;
 }
 
+/* backdrop */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  /* Помогает при скрытом елементе пропустить (события клики мышки и т.д.) */
+  pointer-events: none;
+}
+
+.modal {
+ position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+
+.bt-close {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0;
+    top: 17px;
+    right: 17px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50% 50%;
+
+
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+}
+
+.bt-close:hover {
+  transform: rotate(180deg);
+
+  fill: var(--white-background-color);
+  border: 1px var(--accent-color) solid;
+  border-radius: 50% 50%;
+  background-color: #2196f3;
+}
 
 
 

@@ -58,7 +58,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button order">Заказать услугу</button>
+        <button type="button" class="button order" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- Преимущества -->
@@ -107,12 +107,21 @@
           <ul class="work-list">
             <li class="list">
               <img src="./images/box1.jpg" alt="Программист набирает текст" width="370" />
+              <div class="work-label">
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li class="list">
               <img src="./images/box2.jpg" alt="Человек держит в руках телефон" width="370" />
+              <div class="work-label">
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li class="list">
               <img src="./images/box3.jpg" alt="Человек держит планшет в руках" width="370" />
+              <div class="work-label">
+                <p>Дизайнерские</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -303,5 +312,22 @@
       
       </div>
     </footer>
+
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+  <button class="bt-close" data-modal-close><svg width="11" height="11"><use href="./images/icons.svg/sprite.svg#icon-close-button"></use></svg></button>
+  </div>
+</div>
+
+
+    <!-- <script> 
+    const { height: pageHeaderHeight } = document 
+    .querySelector(".page-header")
+    .getBoundingClientRect();
+    
+    document.body.style.paddingTop = '${pageHeaderHeight}px';
+    </script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
