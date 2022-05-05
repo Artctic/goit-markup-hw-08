@@ -22,7 +22,7 @@
   --footer-adres-text: rgba(255, 255, 255, 0.6);
   /* Белый фоновый цвет */
   --white-background-color: #ffffff;
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
@@ -116,10 +116,11 @@ img {
 /* Page-header */
 
 .page-header {
+ position: fixed;
+  z-index: 999;
+
   border-bottom: 1px solid #ececec;
   background-color: var(--white-background-color);
-    
-  position: fixed;
 
   width: 100%;
   top: 0;
@@ -162,14 +163,13 @@ img {
   padding-bottom: 32px;
 
   color: var(--title-text-color);
-;
+ transition: var(--transition);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  
-  transition: var(--transition);
+
 }
 
 .site-nav .link.current {
@@ -180,13 +180,14 @@ img {
   content: '';
   background-color: var(--accent-color);
   position: absolute;
-  width: 48px;
+  width: 100%;
   height: 4px;
   bottom: -2px;
   left: 50%;
   transform: translate(-50%);
   border-radius: 2px;
 }
+
 
 .contact-item {
  fill: currentColor
@@ -207,10 +208,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  /* transition: var(--transition); */
+  transition: var(--transition);
 }
 
-/* Hero */
 
 /* Overlay */
 .hero {
@@ -253,8 +253,6 @@ img {
 
 /* Button */
 .button {
-  color: var(--title-text-color);
-  background-color: var(--section-bt-color);
   cursor: pointer;
   font-family: inherit;
   border-style: none;
@@ -264,8 +262,6 @@ img {
 /* Button "Заказасть услугу" */
 .button.order {
   display: inline-block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
 
@@ -276,9 +272,48 @@ img {
 
   color: var(--white-background-color);
   background-color: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.button:hover,
+.button:focus {
+  background: #188CE8;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.filter-list .button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: var(--section-bt-color);
+
+  border-radius: 4px;
+
+  transition: var(--transition);
+}
+
+/* Кнопки Портфолио */
+.filter-list .button:hover,
+.filter-list .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: #2196F3;
+    color: #fff
+}
+
+
 
 /* Section */
 
@@ -371,6 +406,7 @@ border-radius: 4px;;
     border-radius: 4px;
 
     margin-bottom: 30px;
+    /* transition: var(--transition) */
 }
 
 /* .icon-details .link:hover,
@@ -391,16 +427,9 @@ border-radius: 4px;;
 .work-label {
     padding: 27px;
     position: absolute;
-    /* top: 75%; */
-    /* left: 50%; */
     width: 370px;
-    height: 70px;
-    /* transform: translate( -50%); */
     background: rgba(47, 48, 58, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
+    text-align: center;
 }
 
 
@@ -463,13 +492,12 @@ color: #FFFFFF;
 
 .icon {
   fill: #AFB1B8;
-
+  transition: var(--transition)
 }
 
 .soc-link:hover .icon,
 .soc-link:focus .icon {
   fill:#ffffff;
-  transition: var(--transition)
 }
 
 /* Клиенты */
@@ -498,14 +526,13 @@ margin-right: 30px;
   fill: currentColor;
   justify-content: center;
   align-items: center;
-  /* transition: var(--transition); */
+  transition: var(--transition);
 }
 
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  transition: var(--transition)
 }
 
 .container-text {
@@ -527,23 +554,7 @@ margin-right: 30px;
   margin-right: 8px;
 }
 
-.filter-list .button {
-  padding: 6px 22px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-
-  border-radius: 4px;
-}
-
-.filter-list .button:hover,
-.filter-list .button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: var(--transition)
-}
 
 .services-list {
   /* Создаёт flex-контейнер, блочный или строчно-блочный, в зависимости от заданного значения, и устанавливает flex-контекст для всех детей (не потомков) контейнера, превращая их во flex-элементы. */
@@ -558,20 +569,30 @@ margin-right: 30px;
 
   margin-right: 30px;
   margin-bottom: 30px;
-
+transition: var(--transition);
 }
 
-.action {
-  position: relative;
-  /* display: flex; */
-}
-
-.action:hover:before {
+.services-list .list:hover .products-text {
+  transform: translateY(0);
   opacity: 1;
-  transition: var(--transition)
 }
 
-.action::before {
+.services-list .list:hover .products::before {
+  transform: translateY(0);
+}
+
+/* Overlay products */
+
+.products {
+  position: relative;
+  overflow: hidden;
+}
+
+.products:hover:before {
+  opacity: 1;
+}
+
+.products::before {
   display: inline-block;
   content: '';
   width: 100%;
@@ -579,23 +600,21 @@ margin-right: 30px;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
 
-  opacity: 0;
+  transform: translateY(100%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
 }
 
-.action-text {
+.products-text {
 font-size: 18px;
 line-height: 1.55;
-  /* top: 25%;
-  text-align: center; */
   color: #ffffff;
   position: absolute;
-  opacity: 0;
   padding: 63px 24px;
-}
 
-.action:hover .action-text {
-  opacity: 1;
-
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-list .list:hover {
@@ -624,13 +643,8 @@ line-height: 1.55;
 
 .services-list .text {
   color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.88;
-
-  /* padding-left: 24px;
-  padding-top: 4px;
-  padding-bottom: 20px; */
 }
 
 .text-block {
@@ -664,6 +678,8 @@ line-height: 1.55;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
+
+  transition: var(--transition);
 }
 
 .wt-color {
@@ -675,22 +691,15 @@ line-height: 1.55;
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-  transition: var(--transition)
 }
 
-.button:hover,
-.button:focus {
-  color: var(--white-background-color);
-  background: #188CE8;
-  transition: var(--transition);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+
 
 .soc-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .soc-item:not(:last-child) {
@@ -704,14 +713,13 @@ line-height: 1.55;
   justify-content: center;
   align-items: center;
   border-radius: 50% 50%;
-  /* transition: var(--transition); */
+  transition: var(--transition);
 }
 
 .soc-link:hover,
 .soc-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
-  transition: var(--transition);
 }
 
 .footer-bg .container {
@@ -771,6 +779,11 @@ margin-bottom: 20px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+
+transition-property: sc
+transition-duration: <время>
+transition-timing-function: <функция распределения времени>
+transition-delay: <задержка>
 }
 
 
