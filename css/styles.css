@@ -579,6 +579,8 @@ transition: var(--transition);
 
 .services-list .list:hover .products::before {
   transform: translateY(0);
+/* background: #757575; */
+opacity: 1;
 }
 
 /* Overlay products */
@@ -589,9 +591,6 @@ transition: var(--transition);
   
 }
 
-.products:hover:before {
-  opacity: 1;
-}
 
 .products::before {
   display: inline-block;
@@ -771,7 +770,7 @@ margin-bottom: 20px;
 
 .backdrop.is-hidden .modal {
   
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
