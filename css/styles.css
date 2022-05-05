@@ -162,11 +162,14 @@ img {
   padding-bottom: 32px;
 
   color: var(--title-text-color);
+;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  
+  transition: var(--transition);
 }
 
 .site-nav .link.current {
@@ -272,7 +275,9 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--white-background-color);
-  background-color: var(--accent-color);
+  background-color: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;;
 }
 
 /* Section */
@@ -384,7 +389,7 @@ img {
 }
 
 .work-label {
-  padding: 27px;
+    padding: 27px;
     position: absolute;
     /* top: 75%; */
     /* left: 50%; */
@@ -392,11 +397,14 @@ img {
     height: 70px;
     /* transform: translate( -50%); */
     background: rgba(47, 48, 58, 0.8);
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
 }
+
+
+
 
 .work-label p {
 font-weight: 700;
@@ -455,12 +463,13 @@ color: #FFFFFF;
 
 .icon {
   fill: #AFB1B8;
-  
+
 }
 
 .soc-link:hover .icon,
 .soc-link:focus .icon {
   fill:#ffffff;
+  transition: var(--transition)
 }
 
 /* Клиенты */
@@ -496,6 +505,7 @@ margin-right: 30px;
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  transition: var(--transition)
 }
 
 .container-text {
@@ -532,6 +542,7 @@ margin-right: 30px;
 .filter-list .button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: var(--transition)
 }
 
 .services-list {
@@ -548,7 +559,6 @@ margin-right: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
 
-  /* transition: var(--transition); */
 }
 
 .action {
@@ -558,6 +568,7 @@ margin-right: 30px;
 
 .action:hover:before {
   opacity: 1;
+  transition: var(--transition)
 }
 
 .action::before {
@@ -584,11 +595,13 @@ line-height: 1.55;
 
 .action:hover .action-text {
   opacity: 1;
+
 }
 
 .services-list .list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .services-list .list:nth-child(3n) {
@@ -662,12 +675,16 @@ line-height: 1.55;
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  transition: var(--transition)
 }
 
 .button:hover,
 .button:focus {
   color: var(--white-background-color);
-  background-color: var(--accent-color);
+  background: #188CE8;
+  transition: var(--transition);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .soc-list {
@@ -694,6 +711,7 @@ line-height: 1.55;
 .soc-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  transition: var(--transition);
 }
 
 .footer-bg .container {
