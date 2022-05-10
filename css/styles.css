@@ -48,7 +48,7 @@
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
 
-  padding-top: 77px;
+  /* padding-top: 77px; */
 }
 
 .container {
@@ -847,6 +847,7 @@ transition-delay: <задержка> */
   margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
+  color: var(--white-background-color);
 }
 
 .button.follower {
@@ -901,12 +902,15 @@ transition-delay: <задержка> */
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form-field {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  /* тест */
+  margin-top: 4px;
 }
 
 
@@ -976,6 +980,14 @@ input[type='checkbox'] {
   fill: #2196F3;
 }
 
+.form-comment {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 20px;
+}
+
 .form-textarea {
   resize: none;
 
@@ -983,6 +995,7 @@ input[type='checkbox'] {
   min-height: 120px;
 
   padding: 12px 16px;
+  margin-top: 4px;
 
   font-size: 14px;
   letter-spacing: 0.01em;
@@ -999,7 +1012,7 @@ input[type='checkbox'] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .checkbox-link {
