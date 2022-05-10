@@ -846,6 +846,13 @@ transition-delay: <задержка> */
   padding-left: 16px;
   background-color: transparent;
   color: var(--white-background-color);
+  outline: none;
+  transition: var(--transition);
+}
+
+.email:hover,
+.email:focus {
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .button.follower {
@@ -930,11 +937,11 @@ transition-delay: <задержка> */
 
 
 /* сделать кастомный */
-input[type='checkbox'] {
+/* input[type='checkbox'] {
   width: 16px;
   height: 15px;
   background: #212121;
-}
+} */
 
 /* .form-field {
   outline: 1px solid blue;
@@ -986,6 +993,11 @@ input[type='checkbox'] {
   margin-bottom: 20px;
 }
 
+.form-comment:focus-within {
+  color: #188CE8;
+}
+
+
 .form-textarea {
   resize: none;
 
@@ -1006,12 +1018,56 @@ input[type='checkbox'] {
   border: 2px solid #2196f3;
 }
 
-.form-checkbox {
+
+.checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  border: 1px solid black;
 }
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  /* appearance: none; */
+}
+
+
+
+.checkbox:checked+.icon {
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  border-radius: 2px;
+  /* background-image: url(); */
+  /* background-size: contain;
+  background-origin: content-box; */
+}
+
+.checkbox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label .icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
 
 .checkbox-link {
   color: #188CE8;
