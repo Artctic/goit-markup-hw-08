@@ -1060,7 +1060,9 @@ transition-delay: <задержка> */
 }
 
 .checkbox-label .icon {
-  display: inline-block;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
