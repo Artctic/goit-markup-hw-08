@@ -388,37 +388,43 @@
         <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
         <label class="form-label">
           Имя
-          <input class="form-input" type="text" name="username" autofocus>
-          <svg class="form-icon">
-            <use href="./images/icons.svg/sprite.svg#icon-person-black"></use>
-          </svg>
+          <span class="form-field">
+            <input class="form-input" type="text" name="username" autofocus>
+            <svg class="form-icon">
+              <use href="./images/icons.svg/sprite.svg#icon-person-black"></use>
+            </svg>
+          </span>
         </label>
 
         <label class="form-label">
           Телефон
-          <input class="form-input" type="tel" name="phone_number">
-          <svg class="form-icon">
-            <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
-          </svg>
+          <span class="form-field"><input class="form-input" type="tel" name="phone_number">
+            <svg class="form-icon">
+              <use href="./images/icons.svg/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </span>
+
         </label>
 
         <label class="form-label">
           Почта
-          <input class="form-input" type="email" name="email">
-          <svg class="form-icon">
-            <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
-          </svg>
+          <span class="form-field">
+            <input class="form-input" type="email" name="email">
+            <svg class="form-icon">
+              <use href="./images/icons.svg/sprite.svg#icon-email-black"></use>
+            </svg>
+          </span>
         </label>
 
-        <label class="form-textarea">
+        <label class="form-label">
           Комментарий
-          <textarea class="form-comment" name="feedback" rows="" placeholder="Введите текст"></textarea>
+          <textarea class="form-textarea" name="feedback" placeholder="Введите текст"></textarea>
         </label>
 
 
         <label class="form-checkbox">
           <input type="checkbox" name="agreement" value="agreement" />
-          Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
         </label>
 
 
