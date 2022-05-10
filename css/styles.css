@@ -732,9 +732,6 @@ img {
   margin-right: 70px;
 }
 
-.footer-item.margin {
-  margin-right: 93px;
-}
 
 .ft-icon {
   fill: currentColor;
@@ -837,6 +834,7 @@ transition-delay: <задержка> */
 .Form-follower {
   display: flex;
   align-items: end;
+  margin-left: auto;
 }
 
 .email {
