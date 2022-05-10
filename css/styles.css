@@ -897,9 +897,6 @@ transition-delay: <задержка> */
 
 /* Форма модалки */
 
-.form-modal {
-  /* outline: 1px solid tomato; */
-}
 
 .modal-title {
   margin-top: 0px;
@@ -1043,6 +1040,10 @@ transition-delay: <задержка> */
   /* border: 1px solid black; */
 }
 
+.checkbox-label:hover .checkbox.icon {
+  border: 2px solid #2196f3;
+}
+
 .checkbox {
   position: absolute;
   width: 1px;
@@ -1067,6 +1068,10 @@ transition-delay: <задержка> */
   /* background-image: url(); */
   /* background-size: contain;
   background-origin: content-box; */
+}
+
+.checkbox:hover+.icon {
+  border: 2px solid #2196f3;
 }
 
 .checkbox .icon {
