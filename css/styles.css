@@ -486,11 +486,15 @@ a {
   text-align: center;
 }
 
-.icon {
+.soc-item__icon {
   fill: #AFB1B8;
   transition: var(--transition)
 }
 
+/* .icon {
+  fill: #AFB1B8;
+  transition: var(--transition)
+} */
 
 
 /* Клиенты */
@@ -509,7 +513,7 @@ a {
   margin-right: 30px;
 }
 
-.client-link {
+.client-item__link {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
@@ -522,8 +526,8 @@ a {
   transition: var(--transition);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-item__link:hover,
+.client-item__link:focus {
   color: var(--main-accent-color);
   border-color: var(--main-accent-color);
 }
@@ -683,10 +687,7 @@ a {
 
 /* Настройки наведения интерактивных элементов (ссылки и кнопки) */
 
-.link:hover,
-.link:focus {
-  color: var(--main-accent-color);
-}
+
 
 .soc-list {
   display: flex;
@@ -1090,7 +1091,13 @@ transition-delay: <задержка> */
 
 
 /* Переиспользованные класы для ховера и фокуса */
-.soc-item__link:hover .icon,
-.soc-item__link:focus .icon {
+.soc-item__link:hover .soc-item__icon,
+.soc-item__link:focus .soc-item__icon {
   fill: var(--white-main-color);
+}
+
+/* Общий стиль для наведения на ссылки */
+.link:hover,
+.link:focus {
+  color: var(--main-accent-color);
 }
