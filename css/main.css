@@ -1,4 +1,35 @@
 @charset "UTF-8";
+:root {
+  /* Основной акцент*/
+  --main-accent-color: #2196f3;
+  /* Вторичный акцент*/
+  --secendary-accent-color: #188CE8;
+  /* Цвет заголовков и навигации*/
+  --secendary-text-color: #212121;
+  /* Вторичный цвет текста (серый)*/
+  --primary-text-color: #757575;
+  /* Цвет кнопок и фона в секции*/
+  --section-icon-bg-color: #f5f4fa;
+  /* Вторичный цвет фона и footera*/
+  --hero-footer-bg-color: #2f303a;
+  /* Белый фоновый цвет */
+  --white-main-color: #ffffff;
+  --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 ul,
@@ -35,37 +66,6 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-:root {
-  /* Основной акцент*/
-  --main-accent-color: #2196f3;
-  /* Вторичный акцент*/
-  --secendary-accent-color: #188CE8;
-  /* Цвет заголовков и навигации*/
-  --secendary-text-color: #212121;
-  /* Вторичный цвет текста (серый)*/
-  --primary-text-color: #757575;
-  /* Цвет кнопок и фона в секции*/
-  --section-icon-bg-color: #f5f4fa;
-  /* Вторичный цвет фона и footera*/
-  --hero-footer-bg-color: #2f303a;
-  /* Белый фоновый цвет */
-  --white-main-color: #ffffff;
-  --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Button */
@@ -461,34 +461,10 @@ a {
   margin-bottom: 50px;
 }
 
-.filter-list .button {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: var(--secendary-text-color);
-  background-color: var(--section-icon-bg-color);
-  border-radius: 4px;
-  transition: var(--transition);
-}
-
-/* Кнопки Портфолио */
-.filter-list .button:hover,
-.filter-list .button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--main-accent-color);
-  color: #fff;
-}
-
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
+/* Создаёт flex-контейнер, блочный или строчно-блочный, в зависимости от заданного значения, и устанавливает flex-контекст для всех детей (не потомков) контейнера, превращая их во flex-элементы. */
+/* Flexbox это система расположения элементов в одном определённом направлении - горизонтально или вертикально. Свойство flex-direction устанавливает направление главной оси, определяя направление элементов в контейнере. */
 .services-list {
-  /* Создаёт flex-контейнер, блочный или строчно-блочный, в зависимости от заданного значения, и устанавливает flex-контекст для всех детей (не потомков) контейнера, превращая их во flex-элементы. */
   display: flex;
-  /* Flexbox это система расположения элементов в одном определённом направлении - горизонтально или вертикально. Свойство flex-direction устанавливает направление главной оси, определяя направление элементов в контейнере. */
   flex-wrap: wrap;
 }
 
