@@ -7,23 +7,23 @@
 /* Белый #FFFFFF */
 
 /* CSS переменные */
-:root {
-  /* Cиний цвет (background)*/
-  --accent-color: #2196f3;
-  /* Цвет заголовков и навигации*/
-  --title-text-color: #212121;
-  /* Вторичный цвет текста (серый)*/
-  --primary-text-color: #757575;
-  /* Цвет кнопок и фона в секции*/
-  --section-bt-color: #f5f4fa;
-  /* Вторичный цвет фона и footera*/
-  --hero-footer-color: #2f303a;
-  /* цвет в адресе имейл, телефон color: rgba(255, 255, 255, 0.6); */
-  --footer-adres-text: rgba(255, 255, 255, 0.6);
-  /* Белый фоновый цвет */
-  --white-background-color: #ffffff;
-  --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* :root { */
+/* Основной акцент*/
+/* --main-accent-color: #2196f3; */
+/* Вторичный акцент*/
+/* --secendary-accent-color: #188CE8; */
+/* Цвет заголовков и навигации*/
+/* --secendary-text-color: #212121; */
+/* Вторичный цвет текста (серый)*/
+/* --primary-text-color: #757575; */
+/* Цвет кнопок и фона в секции*/
+/* --section-icon-bg-color: #f5f4fa; */
+/* Вторичный цвет фона и footera*/
+/* --hero-footer-bg-color: #2f303a; */
+/* Белый фоновый цвет */
+/* --white-main-color: #ffffff; */
+/* --transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 /* Устанавливает тип блочной модели элемента - формулу расчёта его размеров. */
 
@@ -38,17 +38,14 @@
   box-sizing: border-box;
 } */
 
-/* body */
-.page {
+/* General  */
+/* .page {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.71;
-
-  background-color: var(--white-background-color);
+  background-color: var(--white-main-color);
   color: var(--primary-text-color);
-
-  /* padding-top: 77px; */
 }
 
 .container {
@@ -57,14 +54,16 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
+
+/* Избавится от этого класса дает только цвет */
 
 .title {
-  color: var(--title-text-color);
+  color: var(--secendary-text-color);
 }
 
 /* Стили для сброса элемента  */
-h1,
+/* h1,
 h2,
 ul,
 p {
@@ -80,13 +79,13 @@ img {
   display: block;
 }
 
-.link {
+a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-/* Для скрытых заголовков  */
-.visually-hidden {
+/* /* Для скрытых заголовков */
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -98,11 +97,11 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* Логотип */
 .accent {
-  color: var(--accent-color);
+  color: var(--main-accent-color);
 }
 
 .logo {
@@ -110,18 +109,14 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--title-text-color);
+  color: var(--secendary-text-color);
 }
 
 /* Page-header */
 
 .page-header {
-  /* position: fixed;
-  z-index: 999; */
-
   border-bottom: 1px solid #ececec;
-  background-color: var(--white-background-color);
-
+  background-color: var(--white-main-color);
   width: 100%;
   top: 0;
   left: 0;
@@ -145,15 +140,15 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .item {
+.site-nav__item {
   position: relative;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   display: block;
   font-weight: 500;
   line-height: 0.8;
@@ -162,23 +157,23 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: var(--secendary-text-color);
   transition: var(--transition);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--main-accent-color);
 
 }
 
 .site-nav .link.current {
-  color: var(--accent-color);
+  color: var(--main-accent-color);
 }
 
 .site-nav .link.current::after {
   content: '';
-  background-color: var(--accent-color);
+  background-color: var(--main-accent-color);
   position: absolute;
   width: 100%;
   height: 4px;
@@ -188,8 +183,8 @@ img {
   border-radius: 2px;
 }
 
-
-.contact-item {
+/* nav-contact */
+.contacts__icon {
   fill: currentColor
 }
 
@@ -198,11 +193,11 @@ img {
   margin-left: auto;
 }
 
-.contacts .item+.item {
+.contacts__item+.contacts__item {
   margin-left: 50px;
 }
 
-.contacts .link {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -217,10 +212,9 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Header.jpg);
-  background-color: var(--hero-footer-color);
+  background-color: var(--hero-footer-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,7 +227,7 @@ img {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -248,8 +242,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--title-text-color);
-  color: var(--white-background-color);
+  color: var(--secendary-text-color);
+  color: var(--white-main-color);
 }
 
 /* Button */
@@ -271,8 +265,8 @@ img {
   line-height: 1.9;
   letter-spacing: 0.06em;
 
-  color: var(--white-background-color);
-  background-color: #2196F3;
+  color: var(--white-main-color);
+  background-color: var(--main-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -283,7 +277,7 @@ img {
 
 .button:hover,
 .button:focus {
-  background: #188CE8;
+  background: var(--secendary-accent-color);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -297,8 +291,8 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
-  background-color: var(--section-bt-color);
+  color: var(--secendary-text-color);
+  background-color: var(--section-icon-bg-color);
 
   border-radius: 4px;
 
@@ -310,11 +304,9 @@ img {
 .filter-list .button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: #2196F3;
+  background-color: var(--main-accent-color);
   color: #fff
 }
-
-
 
 /* Section */
 
@@ -334,7 +326,7 @@ img {
 
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  color: var(--secendary-text-color);
 }
 
 /* features (Список Преимуществ) */
@@ -343,13 +335,13 @@ img {
 }
 
 
-.features-list .list {
+.features-list__item {
   /* calc ((100% - кол-во марджинов в строке) / количество элементов в строке); */
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
-.list-item:last-child {
+.features-list__item:last-child {
   margin-right: 0px;
 }
 
@@ -394,7 +386,7 @@ img {
   margin-bottom: 0;
 }
 
-.list-item .link {
+.features-list__item .link {
   display: flex;
 
   align-items: center;
@@ -403,7 +395,7 @@ img {
   width: 270px;
   height: 120px;
 
-  background: #F5F4FA;
+  background: var(--section-icon-bg-color);
   border-radius: 4px;
 
   margin-bottom: 30px;
@@ -414,7 +406,7 @@ img {
 .icon-details .link:focus
  {background: var();} */
 
-.features-item {
+.features-list__icon {
   /* width: 100%;
   height: 100%; */
   fill: currentColor;
@@ -434,13 +426,11 @@ img {
 }
 
 
-
-
 .work-label p {
   font-weight: 700;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: var(--white-main-color);
 }
 
 
@@ -457,7 +447,7 @@ img {
 
 /* Team (Наша команда) */
 .section.bg {
-  background-color: var(--section-bt-color);
+  background-color: var(--section-icon-bg-color);
 }
 
 .team-list {
@@ -468,7 +458,7 @@ img {
 .team-list .list {
   margin-right: 30px;
 
-  background-color: var(--white-background-color);
+  background-color: var(--white-main-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -498,7 +488,7 @@ img {
 
 .soc-link:hover .icon,
 .soc-link:focus .icon {
-  fill: #ffffff;
+  fill: var(--white-main-color);
 }
 
 /* Клиенты */
@@ -532,8 +522,8 @@ img {
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--main-accent-color);
+  border-color: var(--main-accent-color);
 }
 
 .container-text {
@@ -610,7 +600,7 @@ img {
 .products-text {
   font-size: 18px;
   line-height: 1.55;
-  color: #ffffff;
+  color: var(--white-main-color);
   position: absolute;
   padding: 63px 24px;
 
@@ -657,7 +647,7 @@ img {
 /* footer */
 
 .footer-bg {
-  background-color: var(--hero-footer-color);
+  background-color: var(--hero-footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -667,7 +657,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--white-background-color);
+  color: var(--white-main-color);
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -686,14 +676,14 @@ img {
 }
 
 .wt-color {
-  color: var(--white-background-color);
+  color: var(--white-main-color);
 }
 
 /* Настройки наведения интерактивных элементов (ссылки и кнопки) */
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--main-accent-color);
 }
 
 .soc-list {
@@ -719,8 +709,8 @@ img {
 
 .soc-link:hover,
 .soc-link:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
+  color: var(--white-main-color);
+  background-color: var(--main-accent-color);
 }
 
 .footer-bg .container {
@@ -739,7 +729,7 @@ img {
 
 .footer-item .soc-item {
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--white-main-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -747,7 +737,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: var(--white-background-color);
+  color: var(--white-main-color);
   margin-bottom: 20px;
 }
 
@@ -784,7 +774,7 @@ img {
   min-height: 581px;
   padding: 40px;
 
-  background-color: #ffffff;
+  background-color: var(--white-main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -820,10 +810,10 @@ transition-delay: <задержка> */
 .bt-close:hover {
   transform: rotate(1turn);
 
-  fill: var(--white-background-color);
-  border: 1px var(--accent-color) solid;
+  fill: var(--white-main-color);
+  border: 1px var(--main-accent-color) solid;
   border-radius: 50% 50%;
-  background-color: #2196f3;
+  background-color: var(--main-accent-color);
 }
 
 
@@ -845,7 +835,7 @@ transition-delay: <задержка> */
   margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
-  color: var(--white-background-color);
+  color: var(--white-main-color);
   outline: none;
   transition: var(--transition);
 }
@@ -856,15 +846,14 @@ transition-delay: <задержка> */
 }
 
 .button.follower {
-
   width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  color: var(--white-background-color);
-  background-color: #2196F3;
+  color: var(--white-main-color);
+  background-color: var(--main-accent-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -874,7 +863,7 @@ transition-delay: <задержка> */
 
 .button.follower:hover,
 .button.follower:focus {
-  background-color: #188CE8;
+  background-color: var(--secendary-accent-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
@@ -884,7 +873,7 @@ transition-delay: <задержка> */
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: var(--white-background-color);
+  color: var(--white-main-color);
   margin-bottom: 20px;
 }
 
@@ -905,7 +894,7 @@ transition-delay: <задержка> */
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secendary-text-color);
 }
 
 .form-label {
@@ -937,7 +926,7 @@ transition-delay: <задержка> */
 }
 
 .form-input:focus {
-  border: 2px solid #2196F3;
+  border: 2px solid var(--main-accent-color);
 }
 
 
@@ -964,8 +953,8 @@ transition-delay: <задержка> */
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  color: var(--white-background-color);
-  background-color: #2196F3;
+  color: var(--white-main-color);
+  background-color: var(--main-accent-color);
   /* box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); */
   border-radius: 4px;
   transition: var(--transition);
@@ -973,7 +962,7 @@ transition-delay: <задержка> */
 
 .button.send:hover,
 .button.send:focus {
-  background: #188CE8;
+  background: var(--secendary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -988,13 +977,13 @@ transition-delay: <задержка> */
 
 /* Изменение цвета лэйбла */
 .form-label:focus-within {
-  color: #2196F3;
+  color: var(--main-accent-color);
 }
 
 
 /* Цвет иконок */
 .form-input:focus+.form-icon {
-  fill: #2196F3;
+  fill: var(--main-accent-color);
 }
 
 .form-comment {
@@ -1006,7 +995,7 @@ transition-delay: <задержка> */
 }
 
 .form-comment:focus-within {
-  color: #188CE8;
+  color: var(--secendary-accent-color);
 }
 
 
@@ -1028,7 +1017,7 @@ transition-delay: <задержка> */
 }
 
 .form-textarea:focus-within {
-  border: 2px solid #2196f3;
+  border: 2px solid var(--main-accent-color);
 }
 
 
@@ -1041,7 +1030,7 @@ transition-delay: <задержка> */
 }
 
 .checkbox-label:hover .checkbox.icon {
-  border: 2px solid #2196f3;
+  border: 2px solid var(--main-accent-color);
 }
 
 .checkbox {
@@ -1062,8 +1051,8 @@ transition-delay: <задержка> */
 
 
 .checkbox:checked+.icon {
-  background-color: #2196f3;
-  border: 2px solid #2196f3;
+  background-color: var(--main-accent-color);
+  border: 2px solid var(--main-accent-color);
   border-radius: 2px;
   /* background-image: url(); */
   /* background-size: contain;
@@ -1071,7 +1060,7 @@ transition-delay: <задержка> */
 }
 
 .checkbox:hover+.icon {
-  border: 2px solid #2196f3;
+  border: 2px solid var(--main-accent-color);
 }
 
 .checkbox .icon {
@@ -1086,12 +1075,12 @@ transition-delay: <задержка> */
   align-items: center;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--secendary-text-color);
   border-radius: 2px;
   margin-right: 8px;
 }
 
 
 .checkbox-link {
-  color: #188CE8;
+  color: var(--secendary-accent-color);
 }

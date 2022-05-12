@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- SCSS -->
+  <link rel="stylesheet" href="./css/main.css" />
   <!-- Файл стилей -->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -28,27 +29,34 @@
 <body class="page">
   <!-- Шапка сайта -->
   <header class="page-header">
-    <div class="container main-nav">
+    <div class="main-nav container">
       <nav class="nav">
         <!-- Тег Span для другого цвета -->
         <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
         <!-- По спецификации в теги <ul> и <ol> можно вкладывать только элементы спика - теги <li>. При этом, внутри тегов <li>, могут быть вложены другие произвольные теги. -->
+
+        <!-- Удалить Link? -->
         <ul class="site-nav">
-          <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+          <li class="site-nav__item"><a href="./index.html" class="site-nav__link link current">Студия</a></li>
+          <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
         </ul>
       </nav>
 
       <ul class="contacts list">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="link"><svg class="contact-item" width="16" height="12">
+        <li class="contacts__item">
+          <a href="mailto:info@devstudio.com" class="contacts__link link">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="item"><a href="tel:+380961111111" class="link"><svg class="contact-item" width="16" height="12">
+
+        <li class="contacts__item">
+          <a href="tel:+380961111111" class="contacts__link link">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg/sprite.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a></li>
+            </svg>+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -56,7 +64,7 @@
   <!-- Hero -->
   <main>
     <section class="hero">
-      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
       <button type="button" class="button order" data-modal-open>Заказать услугу</button>
     </section>
 
@@ -67,8 +75,8 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
 
-          <li class="list-item list">
-            <a href="mailto:info@devstudio.com" class="link"><svg class="features-item" width="70" height="70">
+          <li class="features-list__item list">
+            <a href="mailto:info@devstudio.com" class="link"><svg class="features-list__icon" width="70" height="70">
                 <use href="./images/icons.svg/sprite.svg#icon-antenna"></use>
               </svg></a>
             <h3 class="title">Внимание к деталям</h3>
@@ -76,8 +84,8 @@
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="list-item list">
-            <a href="mailto:info@devstudio.com" class="link"><svg class="features-item" width="70" height="70">
+          <li class="features-list__item list">
+            <a href="mailto:info@devstudio.com" class="link"><svg class="features-list__icon" width="70" height="70">
                 <use href="./images/icons.svg/sprite.svg#icon-clock"></use>
               </svg></a>
             <h3 class="title">Пунктуальность</h3>
@@ -85,8 +93,8 @@
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="list-item list">
-            <a href="mailto:info@devstudio.com" class="link"><svg class="features-item" width="70" height="70">
+          <li class="features-list__item list">
+            <a href="mailto:info@devstudio.com" class="link"><svg class="features-list__icon" width="70" height="70">
                 <use href="./images/icons.svg/sprite.svg#icon-diagram"></use>
               </svg></a>
             <h3 class="title">Планирование</h3>
@@ -94,8 +102,9 @@
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="list-item list">
-            <a href="mailto:info@devstudio.com" class="link"><svg class="features-item" width="70" height="70">
+          <li class="features-list__item list">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="features-list__icon" width="70" height="70">
                 <use href="./images/icons.svg/sprite.svg#icon-astronaut"></use>
               </svg></a>
             <h3 class="title">Современные технологии</h3>
@@ -330,7 +339,7 @@
       </div>
 
       <div class="footer-item">
-        <h2 class="footer-title title">Присоединяйтесь</h2>
+        <h2 class="footer-title">Присоединяйтесь</h2>
         <ul class="soc-list">
           <li class="soc-item">
             <a class="soc-link link" href=""><svg class="ft-icon" width="20" height="20">
