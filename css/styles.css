@@ -99,6 +99,8 @@ a {
   overflow: hidden;
 } */
 
+
+
 /* Логотип */
 .accent {
   color: var(--main-accent-color);
@@ -319,7 +321,7 @@ a {
   padding-top: 0;
 }
 
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -386,7 +388,7 @@ a {
   margin-bottom: 0;
 }
 
-.features-list__item .link {
+.features-list__link {
   display: flex;
 
   align-items: center;
@@ -412,9 +414,21 @@ a {
   fill: currentColor;
 }
 
-/* Наши работы */
+/* Чем мы занимаемся */
 .work-list {
   display: flex;
+}
+
+
+.work-list__item {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 30px;
+}
+
+.work-list__item:last-child {
+  margin-right: 0px;
 }
 
 .work-label {
@@ -426,26 +440,15 @@ a {
 }
 
 
-.work-label p {
+.work-label__text {
   font-weight: 700;
   text-transform: uppercase;
 
   color: var(--white-main-color);
 }
 
-
-.work-list .list {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  margin-right: 30px;
-}
-
-.work-list .list:last-child {
-  margin-left: 0;
-}
-
 /* Team (Наша команда) */
+/* модификатор */
 .section.bg {
   background-color: var(--section-icon-bg-color);
 }
@@ -455,7 +458,7 @@ a {
   margin-bottom: 0px;
 }
 
-.team-list .list {
+.team-list__item {
   margin-right: 30px;
 
   background-color: var(--white-main-color);
@@ -465,16 +468,18 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .title {
+.team-list__title {
   margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+
+  color: var(--secendary-text-color);
 }
 
-.team-list .text {
+.team-list__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -486,10 +491,7 @@ a {
   transition: var(--transition)
 }
 
-.soc-link:hover .icon,
-.soc-link:focus .icon {
-  fill: var(--white-main-color);
-}
+
 
 /* Клиенты */
 
@@ -697,7 +699,7 @@ a {
   margin-right: 10px;
 }
 
-.soc-link {
+.soc-item__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -707,8 +709,8 @@ a {
   transition: var(--transition);
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.soc-item__link:hover,
+.soc-item__link:focus {
   color: var(--white-main-color);
   background-color: var(--main-accent-color);
 }
@@ -1083,4 +1085,12 @@ transition-delay: <задержка> */
 
 .checkbox-link {
   color: var(--secendary-accent-color);
+}
+
+
+
+/* Переиспользованные класы для ховера и фокуса */
+.soc-item__link:hover .icon,
+.soc-item__link:focus .icon {
+  fill: var(--white-main-color);
 }
