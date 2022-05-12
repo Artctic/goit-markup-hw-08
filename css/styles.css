@@ -280,7 +280,6 @@ a {
 .button:hover,
 .button:focus {
   background: var(--secendary-accent-color);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -486,10 +485,7 @@ a {
   text-align: center;
 }
 
-.soc-item__icon {
-  fill: #AFB1B8;
-  transition: var(--transition)
-}
+
 
 /* .icon {
   fill: #AFB1B8;
@@ -727,9 +723,8 @@ a {
 }
 
 
-.soc-item__icon {
-  fill: currentColor;
-}
+
+
 
 .footer-item .soc-item {
   border-radius: 50%;
@@ -791,7 +786,7 @@ transition-delay: <задержка> */
 }
 
 
-.bt-close {
+.modal__bt-close {
 
   display: flex;
   align-items: center;
@@ -811,7 +806,7 @@ transition-delay: <задержка> */
   transition-timing-function: linear;
 }
 
-.bt-close:hover {
+.modal__bt-close:hover {
   transform: rotate(1turn);
 
   fill: var(--white-main-color);
@@ -849,7 +844,7 @@ transition-delay: <задержка> */
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.button.follower {
+.Form-follower__button {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -865,15 +860,14 @@ transition-delay: <задержка> */
   transition: var(--transition);
 }
 
-.button.follower:hover,
-.button.follower:focus {
+.Form-follower__button:hover,
+.Form-follower__button:focus {
   background-color: var(--secendary-accent-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
 
-
-.Form-title {
+.Form-follower__title {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -881,8 +875,7 @@ transition-delay: <задержка> */
   margin-bottom: 20px;
 }
 
-
-.follower-bt-icon {
+.Form-follower__icon {
   fill: currentColor;
   margin-left: 10px;
 
@@ -891,7 +884,7 @@ transition-delay: <задержка> */
 /* Форма модалки */
 
 
-.modal-title {
+.form-modal__title {
   margin-top: 0px;
   margin-bottom: 12px;
   font-size: 20px;
@@ -901,7 +894,7 @@ transition-delay: <задержка> */
   color: var(--secendary-text-color);
 }
 
-.form-label {
+.form-modal__label {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -909,15 +902,14 @@ transition-delay: <задержка> */
   margin-bottom: 10px;
 }
 
-.form-field {
+.form-modal__field {
   position: relative;
   display: block;
   /* тест */
   margin-top: 4px;
 }
 
-
-.form-input {
+.form-modal__input {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -929,23 +921,25 @@ transition-delay: <задержка> */
   outline: none;
 }
 
-.form-input:focus {
+/* Изменение цвета лэйбла */
+.form-modal__label:focus-within {
+  color: var(--main-accent-color);
+}
+
+.form-modal__input:focus {
   border: 2px solid var(--main-accent-color);
 }
 
-
-/* сделать кастомный */
-/* input[type='checkbox'] {
+.form-modal__icon {
   width: 16px;
-  height: 15px;
-  background: #212121;
-} */
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
 
-/* .form-field {
-  outline: 1px solid blue;
-  display: flex;
-  flex-direction: column;
-} */
+
 
 .button.send {
   display: block;
@@ -969,21 +963,6 @@ transition-delay: <задержка> */
   background: var(--secendary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.form-icon {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-/* Изменение цвета лэйбла */
-.form-label:focus-within {
-  color: var(--main-accent-color);
-}
-
 
 /* Цвет иконок */
 .form-input:focus+.form-icon {
@@ -1101,4 +1080,13 @@ transition-delay: <задержка> */
 .link:hover,
 .link:focus {
   color: var(--main-accent-color);
+}
+
+.soc-item__icon {
+  fill: #AFB1B8;
+  transition: var(--transition) fill: currentColor;
+}
+
+.soc-item__icon--white {
+  fill: #fff;
 }
