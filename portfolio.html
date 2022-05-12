@@ -63,19 +63,19 @@
         <h1 class="visually-hidden">Примеры работ</h1>
 
         <ul class="filter-list">
-          <li class="list">
+          <li class="filter-list__item">
             <button type="button" class="button">Все</button>
           </li>
-          <li class="list">
+          <li class="filter-list__item">
             <button type="button" class="button">Веб-сайты</button>
           </li>
-          <li class="list">
+          <li class="filter-list__item">
             <button type="button" class="button">Приложения</button>
           </li>
-          <li class="list">
+          <li class="filter-list__item">
             <button type="button" class="button">Дизайн</button>
           </li>
-          <li class="list">
+          <li class="filter-list__item">
             <button type="button" class="button">Маркетинг</button>
           </li>
         </ul>
@@ -211,7 +211,7 @@
     </section>
   </main>
 
-  <footer class="footer-bg">
+  <footer class="footer">
     <div class="container">
 
       <div class="footer-item">
@@ -219,42 +219,43 @@
         <a href="./index.html" class="Footer-logo link"><span class="accent">Web</span>Studio</a>
         <address>
           <ul class="address-list">
-            <li class="item">
-              <a href="https://goo.gl/maps/2jLUbfk7e9V8cH5K9" class="link" target="_blank"
-                rel="noreferrer noopener"><span class="wt-color">г. Киев, пр-т Леси Украинки, 26</span></a>
+            <li class="address-list__item">
+              <a href="https://goo.gl/maps/2jLUbfk7e9V8cH5K9" class="address-list__link address-list__link--white link"
+                target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки,
+                26</a>
             </li>
             <!-- Ссылка на адрес электронной почты  -->
-            <li class="item">
-              <a href="mailto:info@example.com" class="link">info@example.com</a>
+            <li class="address-list__item">
+              <a href="mailto:info@example.com" class="address-list__link link">info@example.com</a>
             </li>
             <!-- Ссылка на телефонный номер -->
-            <li class="item">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            <li class="address-list__item">
+              <a href="tel:+380991111111" class="address-list__link link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
 
       <div class="footer-item">
-        <h2 class="footer-title title">Присоединяйтесь</h2>
+        <h2 class="footer-title">Присоединяйтесь</h2>
         <ul class="soc-list">
           <li class="soc-item">
-            <a class="soc-link link" href=""><svg class="ft-icon" width="20" height="20">
+            <a class="soc-item__link" href=""><svg class="soc-item__icon soc-item__icon--white" width="20" height="20">
                 <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
               </svg></a>
           </li>
           <li class="soc-item">
-            <a class="soc-link link" href=""><svg class="ft-icon" width="20" height="20">
+            <a class="soc-item__link" href=""><svg class="soc-item__icon soc-item__icon--white" width="20" height="20">
                 <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
               </svg></a>
           </li>
           <li class="soc-item">
-            <a class="soc-link link" href=""><svg class="ft-icon" width="20" height="20">
+            <a class="soc-item__link" href=""><svg class="soc-item__icon soc-item__icon--white" width="20" height="20">
                 <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li class="soc-item">
-            <a class="soc-link link" href=""><svg class="ft-icon" width="20" height="20">
+            <a class="soc-item__link" href=""><svg class="soc-item__icon soc-item__icon--white" width="20" height="20">
                 <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
               </svg></a>
           </li>
@@ -265,7 +266,7 @@
       <form class="Form-follower">
         <div>
 
-          <h2 class="Form-title">Подпишитесь на рассылку</h2>
+          <h2 class="Form-follower__title">Подпишитесь на рассылку</h2>
 
           <label>
             <input class="email" type="email" name="email" placeholder="E-mail" />
@@ -273,7 +274,8 @@
 
         </div>
 
-        <button class="button follower" type="submit">Подписаться<svg class="follower-bt-icon" width="24" height="24">
+        <button class="Form-follower__button button" type="submit">Подписаться<svg class="Form-follower__icon"
+            width="24" height="24">
             <use href="./images/icons.svg/sprite.svg#icon-icon-send-1"></use>
           </svg>
         </button>

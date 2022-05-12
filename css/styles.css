@@ -284,31 +284,6 @@ a {
   border-radius: 4px;
 }
 
-.filter-list .button {
-  padding: 6px 22px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-
-  color: var(--secendary-text-color);
-  background-color: var(--section-icon-bg-color);
-
-  border-radius: 4px;
-
-  transition: var(--transition);
-}
-
-/* Кнопки Портфолио */
-.filter-list .button:hover,
-.filter-list .button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--main-accent-color);
-  color: #fff
-}
-
 /* Section */
 
 .section {
@@ -485,14 +460,6 @@ a {
   text-align: center;
 }
 
-
-
-/* .icon {
-  fill: #AFB1B8;
-  transition: var(--transition)
-} */
-
-
 /* Клиенты */
 
 .client-title {
@@ -536,14 +503,39 @@ a {
 }
 
 /* Portfolio */
+
 .filter-list {
   display: flex;
   justify-content: center;
-
   margin-bottom: 50px;
 }
 
-.filter-list .list:not(:last-child) {
+.filter-list .button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: var(--secendary-text-color);
+  background-color: var(--section-icon-bg-color);
+
+  border-radius: 4px;
+
+  transition: var(--transition);
+}
+
+/* Кнопки Портфолио */
+.filter-list .button:hover,
+.filter-list .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--main-accent-color);
+  color: #fff
+}
+
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -939,37 +931,12 @@ transition-delay: <задержка> */
   transform: translateY(-50%);
 }
 
-
-
-.button.send {
-  display: block;
-  margin: 0 auto;
-
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  color: var(--white-main-color);
-  background-color: var(--main-accent-color);
-  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); */
-  border-radius: 4px;
-  transition: var(--transition);
-}
-
-.button.send:hover,
-.button.send:focus {
-  background: var(--secendary-accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 /* Цвет иконок */
-.form-input:focus+.form-icon {
+.form-modal__input:focus+.form-modal__icon {
   fill: var(--main-accent-color);
 }
 
-.form-comment {
+.form-modal__comment {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -977,12 +944,11 @@ transition-delay: <задержка> */
   margin-bottom: 20px;
 }
 
-.form-comment:focus-within {
+.form-modal__comment:focus-within {
   color: var(--secendary-accent-color);
 }
 
-
-.form-textarea {
+.form-modal__textarea {
   resize: none;
 
   width: 100%;
@@ -1016,7 +982,7 @@ transition-delay: <задержка> */
   border: 2px solid var(--main-accent-color);
 }
 
-.checkbox {
+.checkbox-label__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1031,9 +997,7 @@ transition-delay: <задержка> */
   /* appearance: none; */
 }
 
-
-
-.checkbox:checked+.icon {
+.checkbox-label__input:checked+.checkbox-label__icon {
   background-color: var(--main-accent-color);
   border: 2px solid var(--main-accent-color);
   border-radius: 2px;
@@ -1042,17 +1006,17 @@ transition-delay: <задержка> */
   background-origin: content-box; */
 }
 
-.checkbox:hover+.icon {
+.checkbox-label__input:hover+.icon {
   border: 2px solid var(--main-accent-color);
 }
 
-.checkbox .icon {
+/* .checkbox .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.checkbox-label .icon {
+.checkbox-label__icon {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -1063,11 +1027,32 @@ transition-delay: <задержка> */
   margin-right: 8px;
 }
 
-
-.checkbox-link {
+.checkbox-label__link {
   color: var(--secendary-accent-color);
 }
 
+.form-modal__button {
+  display: block;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--white-main-color);
+  background-color: var(--main-accent-color);
+  /* box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); */
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.form-modal__button:hover,
+.form-modal__button:focus {
+  background: var(--secendary-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 /* Переиспользованные класы для ховера и фокуса */
