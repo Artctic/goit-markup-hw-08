@@ -652,7 +652,7 @@ a {
 
 /* footer */
 
-.footer-bg {
+.footer {
   background-color: var(--hero-footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -668,11 +668,11 @@ a {
   display: inline-block;
 }
 
-.address-list .item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-list .link {
+.address-list__link {
   display: inline-block;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -681,9 +681,10 @@ a {
   transition: var(--transition);
 }
 
-.wt-color {
-  color: var(--white-main-color);
+.address-list__link--white {
+  color: var(--white-main-color)
 }
+
 
 /* Настройки наведения интерактивных элементов (ссылки и кнопки) */
 
@@ -716,7 +717,7 @@ a {
   background-color: var(--main-accent-color);
 }
 
-.footer-bg .container {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -726,7 +727,7 @@ a {
 }
 
 
-.ft-icon {
+.soc-item__icon {
   fill: currentColor;
 }
 
