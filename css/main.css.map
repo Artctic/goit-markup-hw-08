@@ -12,8 +12,8 @@
         "../sass/component/_logo.scss",
         "../sass/component/_page-header.scss",
         "../sass/component/_hero.scss",
-        "../sass/component/_section.scss",
-        "../sass/component/_portfolio.scss",
+        "../sass/component/_studio-section.scss",
+        "../sass/component/_portfolio-section.scss",
         "../sass/component/_footer.scss",
         "../sass/component/_backdrop-modal.scss"
     ],
