@@ -1,28 +1,3 @@
-/* Button */
-%button {
-    cursor: pointer;
-    border-style: none;
-    display: inline-block;
-    min-width: 200px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    color: var(--white-main-color);
-    background-color: var(--main-accent-color);
-    border-radius: 4px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background: var(--secendary-accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-    }
-}
-
 /* Button "Заказасть услугу" */
 .hero__button {
     @extend %button;
@@ -62,13 +37,11 @@
 
 // Кнопка "Подписаться" в футере
 .form-follower__button {
+    @include centeredFlex(flex);
     @extend %button;
     min-width: 200px;
-
     padding: 10px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 
     &:hover,
     &:focus {

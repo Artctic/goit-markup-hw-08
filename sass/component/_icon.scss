@@ -1,7 +1,5 @@
 .soc-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(flex);
 }
 
 .soc-item:not(:last-child) {
@@ -11,9 +9,7 @@
 .soc-item__link {
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(flex);
     border-radius: 50% 50%;
     transition: var(--transition);
 
