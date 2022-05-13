@@ -89,12 +89,11 @@
     }
 }
 
-
 .section.bg {
     background-color: var(--section-icon-bg-color);
 }
 
-
+// Наша команда
 .team-list {
     display: flex;
     margin-bottom: 0px;
@@ -127,6 +126,8 @@
         text-align: center;
     }
 }
+
+// Постоянные клиенты
 
 .client-title {
     display: flex;
@@ -161,6 +162,7 @@
     }
 }
 
+// Текст под карточками "Наша команда"
 
 .container-text {
     padding-top: 30px;
