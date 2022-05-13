@@ -10,18 +10,17 @@
     letter-spacing: 0.06em;
     color: var(--white-main-color);
     background-color: var(--main-accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:hover,
-.button:focus {
-    background: var(--secendary-accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    &:hover,
+    &:focus {
+        background: var(--secendary-accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }
 
 /* Button "Заказасть услугу" */
@@ -61,7 +60,6 @@
     }
 }
 
-
 // Кнопка "Подписаться" в футере
 .form-follower__button {
     @extend .button;
@@ -71,12 +69,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.form-follower__button:hover,
-.form-follower__button:focus {
-    background-color: var(--secendary-accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: var(--secendary-accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 // Кнопка модалки
@@ -86,11 +84,10 @@
     margin: 0 auto;
     min-width: 200px;
     height: 50px;
-}
 
-
-.form-modal__button:hover,
-.form-modal__button:focus {
-    background: var(--secendary-accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background: var(--secendary-accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
