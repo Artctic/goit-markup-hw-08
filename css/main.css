@@ -68,6 +68,11 @@ a {
   padding-right: 15px;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--main-accent-color);
+}
+
 /* Button */
 .button {
   cursor: pointer;
@@ -171,8 +176,7 @@ a {
   transition: var(--transition);
 }
 
-.soc-item__link:hover,
-.soc-item__link:focus {
+.soc-item__link:hover, .soc-item__link:focus {
   color: var(--white-main-color);
   background-color: var(--main-accent-color);
 }
@@ -180,11 +184,6 @@ a {
 .soc-item__link:hover .soc-item__icon,
 .soc-item__link:focus .soc-item__icon {
   fill: var(--white-main-color);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--main-accent-color);
 }
 
 .soc-item__icon {

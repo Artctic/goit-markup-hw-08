@@ -16,22 +16,17 @@
     align-items: center;
     border-radius: 50% 50%;
     transition: var(--transition);
-}
 
-.soc-item__link:hover,
-.soc-item__link:focus {
-    color: var(--white-main-color);
-    background-color: var(--main-accent-color);
-}
+    &:hover,
+    &:focus {
+        color: var(--white-main-color);
+        background-color: var(--main-accent-color);
+    }
 
-.soc-item__link:hover .soc-item__icon,
-.soc-item__link:focus .soc-item__icon {
-    fill: var(--white-main-color);
-}
-
-.link:hover,
-.link:focus {
-    color: var(--main-accent-color);
+    &:hover .soc-item__icon,
+    &:focus .soc-item__icon {
+        fill: var(--white-main-color);
+    }
 }
 
 .soc-item__icon {
