@@ -1,5 +1,5 @@
 /* Button */
-.button {
+%button {
     cursor: pointer;
     border-style: none;
     display: inline-block;
@@ -25,7 +25,7 @@
 
 /* Button "Заказасть услугу" */
 .hero__button {
-    @extend .button;
+    @extend %button;
     padding: 10px 32px;
 }
 
@@ -36,7 +36,7 @@
     margin-bottom: 50px;
 
     &__button {
-        @extend .button;
+        @extend %button;
         min-width: 73px;
         padding: 6px 22px;
         font-weight: 500;
@@ -62,7 +62,7 @@
 
 // Кнопка "Подписаться" в футере
 .form-follower__button {
-    @extend .button;
+    @extend %button;
     min-width: 200px;
 
     padding: 10px 28px;
@@ -79,7 +79,7 @@
 
 // Кнопка модалки
 .form-modal__button {
-    @extend .button;
+    @extend %button;
     display: block;
     margin: 0 auto;
     min-width: 200px;

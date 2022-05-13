@@ -74,7 +74,7 @@ a {
 }
 
 /* Button */
-.button, .hero__button, .filter-list__button, .form-follower__button, .form-modal__button {
+.hero__button, .filter-list__button, .form-follower__button, .form-modal__button {
   cursor: pointer;
   border-style: none;
   display: inline-block;
@@ -91,7 +91,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover, .hero__button:hover, .filter-list__button:hover, .form-follower__button:hover, .form-modal__button:hover, .button:focus, .hero__button:focus, .filter-list__button:focus, .form-follower__button:focus, .form-modal__button:focus {
+.hero__button:hover, .filter-list__button:hover, .form-follower__button:hover, .form-modal__button:hover, .hero__button:focus, .filter-list__button:focus, .form-follower__button:focus, .form-modal__button:focus {
   background: var(--secendary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -577,10 +577,6 @@ a {
   display: inline-block;
 }
 
-.address-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .address-list__link {
   display: inline-block;
   font-style: normal;
@@ -591,6 +587,10 @@ a {
 
 .address-list__link--white {
   color: var(--white-main-color);
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer .container {
@@ -608,7 +608,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-title {
+.footer__title {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -620,6 +620,19 @@ a {
   display: flex;
   align-items: end;
   margin-left: auto;
+}
+
+.form-follower__title {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--white-main-color);
+  margin-bottom: 20px;
+}
+
+.form-follower__icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .email {
@@ -635,22 +648,8 @@ a {
   transition: var(--transition);
 }
 
-.email:hover,
-.email:focus {
+.email:hover, .email:focus {
   border: 1px solid rgba(255, 255, 255, 0.7);
-}
-
-.form-follower__title {
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: var(--white-main-color);
-  margin-bottom: 20px;
-}
-
-.form-follower__icon {
-  fill: currentColor;
-  margin-left: 10px;
 }
 
 .backdrop {
