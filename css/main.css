@@ -714,7 +714,7 @@ a {
   background-color: var(--main-accent-color);
 }
 
-.form-modal__title {
+.modal .form-modal__title {
   margin-top: 0px;
   margin-bottom: 12px;
   font-size: 20px;
@@ -724,7 +724,7 @@ a {
   color: var(--secendary-text-color);
 }
 
-.form-modal__label {
+.modal .form-modal__label {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -732,13 +732,13 @@ a {
   margin-bottom: 10px;
 }
 
-.form-modal__field {
+.modal .form-modal__field {
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-.form-modal__input {
+.modal .form-modal__input {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -747,6 +747,36 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
+  outline: none;
+}
+
+.modal .form-modal__icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.modal .form-modal__comment {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modal .form-modal__textarea {
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   outline: none;
 }
 
@@ -759,43 +789,13 @@ a {
   border: 2px solid var(--main-accent-color);
 }
 
-.form-modal__icon {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
 /* Цвет иконок */
 .form-modal__input:focus + .form-modal__icon {
   fill: var(--main-accent-color);
 }
 
-.form-modal__comment {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  display: block;
-  margin-bottom: 20px;
-}
-
 .form-modal__comment:focus-within {
   color: var(--secendary-accent-color);
-}
-
-.form-modal__textarea {
-  resize: none;
-  width: 100%;
-  min-height: 120px;
-  padding: 12px 16px;
-  margin-top: 4px;
-  font-size: 14px;
-  letter-spacing: 0.01em;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
 }
 
 .form-textarea:focus-within {
