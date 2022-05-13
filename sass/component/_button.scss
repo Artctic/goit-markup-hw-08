@@ -5,7 +5,7 @@
 }
 
 /* Button "Заказасть услугу" */
-.button.order {
+.hero__button {
     display: inline-block;
     padding: 10px 32px;
     min-width: 200px;
@@ -58,13 +58,12 @@
             color: #fff
         }
     }
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
-
-
-.filter-list__item:not(:last-child) {
-    margin-right: 8px;
-}
 
 // Кнопка "Подписаться" в футере
 .form-follower__button {
