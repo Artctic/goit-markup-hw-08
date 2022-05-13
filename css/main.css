@@ -732,6 +732,10 @@ a {
   margin-bottom: 10px;
 }
 
+.modal .form-modal__label:focus-within {
+  color: var(--main-accent-color);
+}
+
 .modal .form-modal__field {
   position: relative;
   display: block;
@@ -748,6 +752,14 @@ a {
   border-radius: 4px;
   padding: 12px 42px;
   outline: none;
+}
+
+.modal .form-modal__input:focus {
+  border: 2px solid var(--main-accent-color);
+}
+
+.modal .form-modal__input:focus + .form-modal__icon {
+  fill: var(--main-accent-color);
 }
 
 .modal .form-modal__icon {
@@ -767,6 +779,10 @@ a {
   margin-bottom: 20px;
 }
 
+.modal .form-modal__comment:focus-within {
+  color: var(--secendary-accent-color);
+}
+
 .modal .form-modal__textarea {
   resize: none;
   width: 100%;
@@ -780,25 +796,7 @@ a {
   outline: none;
 }
 
-/* Изменение цвета лэйбла */
-.form-modal__label:focus-within {
-  color: var(--main-accent-color);
-}
-
-.form-modal__input:focus {
-  border: 2px solid var(--main-accent-color);
-}
-
-/* Цвет иконок */
-.form-modal__input:focus + .form-modal__icon {
-  fill: var(--main-accent-color);
-}
-
-.form-modal__comment:focus-within {
-  color: var(--secendary-accent-color);
-}
-
-.form-textarea:focus-within {
+.modal .form-modal__textarea:focus-within {
   border: 2px solid var(--main-accent-color);
 }
 

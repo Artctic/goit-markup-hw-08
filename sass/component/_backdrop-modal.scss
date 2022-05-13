@@ -74,6 +74,10 @@
             letter-spacing: 0.01em;
             display: block;
             margin-bottom: 10px;
+
+            &:focus-within {
+                color: var(--main-accent-color);
+            }
         }
 
         &__field {
@@ -92,6 +96,14 @@
             border-radius: 4px;
             padding: 12px 42px;
             outline: none;
+
+            &:focus {
+                border: 2px solid var(--main-accent-color);
+            }
+
+            &:focus+.form-modal__icon {
+                fill: var(--main-accent-color);
+            }
         }
 
         &__icon {
@@ -109,6 +121,10 @@
             letter-spacing: 0.01em;
             display: block;
             margin-bottom: 20px;
+
+            &:focus-within {
+                color: var(--secendary-accent-color);
+            }
         }
 
         &__textarea {
@@ -122,34 +138,12 @@
             border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
             outline: none;
+
+            &:focus-within {
+                border: 2px solid var(--main-accent-color);
+            }
         }
     }
-}
-
-/* Изменение цвета лэйбла */
-.form-modal__label:focus-within {
-    color: var(--main-accent-color);
-}
-
-.form-modal__input:focus {
-    border: 2px solid var(--main-accent-color);
-}
-
-/* Цвет иконок */
-.form-modal__input:focus+.form-modal__icon {
-    fill: var(--main-accent-color);
-}
-
-
-
-.form-modal__comment:focus-within {
-    color: var(--secendary-accent-color);
-}
-
-
-
-.form-textarea:focus-within {
-    border: 2px solid var(--main-accent-color);
 }
 
 
