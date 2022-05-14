@@ -246,7 +246,7 @@ a {
 .site-nav__link {
   display: block;
   font-weight: 500;
-  line-height: 0.8;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -609,7 +609,7 @@ a {
 
 .footer__title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-main-color);
   margin-bottom: 20px;
@@ -623,7 +623,7 @@ a {
 
 .form-follower__title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14px;
   text-transform: uppercase;
   color: var(--white-main-color);
   margin-bottom: 20px;
@@ -715,7 +715,7 @@ a {
   margin-top: 0px;
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secendary-text-color);
@@ -723,7 +723,7 @@ a {
 
 .modal .form-modal__label {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   display: block;
   margin-bottom: 10px;
@@ -741,7 +741,7 @@ a {
 
 .modal .form-modal__input {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   width: 448px;
   height: 40px;
@@ -770,7 +770,7 @@ a {
 
 .modal .form-modal__comment {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16px;
   letter-spacing: 0.01em;
   display: block;
   margin-bottom: 20px;
