@@ -315,6 +315,18 @@ a {
   color: var(--secendary-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -392,7 +404,6 @@ a {
 
 .site-nav {
   display: none;
-  margin-left: 93px;
 }
 
 @media screen and (min-width: 768px) {
@@ -405,8 +416,11 @@ a {
   position: relative;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    display: flex;
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
