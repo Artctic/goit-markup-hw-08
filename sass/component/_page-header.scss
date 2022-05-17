@@ -12,7 +12,18 @@
 
 .main-nav {
     display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+    }
+
+
+
 }
 
 .menu-button {
@@ -22,6 +33,11 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+
+    }
 }
 
 .menu-container {
@@ -60,8 +76,12 @@
 }
 
 .site-nav {
-    display: flex;
+    display: none;
     margin-left: 93px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 
     &__item {
         position: relative;
@@ -109,11 +129,25 @@
 
 
 .contacts {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        margin-left: auto;
+    }
 
     &__item+&__item {
-        margin-left: 50px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 50px;
+        }
+
     }
 
     &__link {

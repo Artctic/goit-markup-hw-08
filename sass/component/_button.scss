@@ -6,9 +6,19 @@
 
 /* Кнопки Портфолио */
 .filter-list {
+
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 
     &__button {
         @extend %button;
@@ -30,9 +40,20 @@
         }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
+    &__item {
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
     }
+
+
 }
 
 // Кнопка "Подписаться" в футере
