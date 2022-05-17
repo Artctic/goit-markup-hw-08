@@ -696,6 +696,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .services-list__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
 .services-list__item:hover .products-text {
   transform: translateY(0);
   opacity: 1;
@@ -744,6 +750,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .services-list .text {

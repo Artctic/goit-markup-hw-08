@@ -34,9 +34,9 @@
             margin-bottom: 30px;
         }
 
-        // @media screen and (min-width: 1200px) {
-        //     width: 1200px;
-        // }
+        @media screen and (min-width: 1200px) {
+            width: calc(100% / 3 - 30px);
+        }
     }
 
     &__item:hover .products-text {
@@ -111,6 +111,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: #212121;
 }
 
 .services-list .text {
