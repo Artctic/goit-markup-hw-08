@@ -32,6 +32,7 @@
     <div class="main-nav container">
       <nav class="nav">
         <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+
         <ul class="site-nav">
           <li class="site-nav__item">
             <a href="./index.html" class="site-nav__link current">Студия</a>
@@ -44,15 +45,13 @@
           </li>
         </ul>
 
-        <button class="menu-button is-open" type="button" data-menu-button aria-expanded="false"
-          aria-controls="menu-container">
+        <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/icons.svg/sprite.svg#icon-CloseBurger"></use>
             <use class="icon-menu" href="./images/icons.svg/sprite.svg#icon-Burger"></use>
           </svg>
         </button>
 
-        <div class="menu-container" id="menu-container" data-menu>Контекст меню</div>
+        <!-- <div class="menu-container" id="menu-container" data-menu>Контекст меню</div> -->
       </nav>
 
       <ul class="contacts list">
@@ -401,7 +400,6 @@
         </label>
 
 
-
         <button class="form-follower__button" type="submit">Подписаться<svg class="form-follower__icon" width="24"
             height="24">
             <use href="./images/icons.svg/sprite.svg#icon-icon-send-1"></use>
@@ -482,6 +480,45 @@
   <input type="checkbox" name="hobby" value="music" checked /> -->
 
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use href="./images/icons.svg/sprite.svg#icon-CloseBurger"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="" class="link">Студия</a></li>
+      <li><a href="" class="link">Портфолио</a></li>
+      <li><a href="" class="link">Контакты</a></li>
+    </ul>
+    <ul class="mobile-menu">
+      <li class="">
+        <a href="mailto:info@example.com" class="">info@example.com</a>
+      </li>
+      <li class="">
+        <a href="tel:+380991111111" class="">+38 099 111 11 11</a>
+      </li>
+    </ul>
+
+    <div class="mob-social">
+      <ul class="mob-social__list">
+        <li class="mob-social__item">
+          <a href="" class="">Instagram</a>
+        </li>
+        <li class="mob-social__item">
+          <a href="" class="">Twitter</a>
+        </li>
+        <li class="mob-social__item">
+          <a href="" class="">Facebook</a>
+        </li>
+        <li class="mob-social__item">
+          <a href="" class="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 
   <script>
     const { height: pageHeaderHeight } = document
@@ -492,9 +529,12 @@
   </script>
 
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <!-- <script src="./js/menu.js"></script> -->
 
-
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
