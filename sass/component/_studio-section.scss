@@ -1,33 +1,36 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    &__title {
-        font-size: 36px;
-        line-height: 1.2;
-        text-align: center;
-        margin-bottom: 50px;
-        color: var(--secendary-text-color);
-    }
-}
-
-
-// стил для сбро падингов в секции возможно перенести в другой паршел
-.section.no-padding {
-    padding-top: 0;
-}
-
 .features-list {
-    display: flex;
+    margin: -15px;
+
+    @media screen and (min-width: 768px) {
+        // width: calc((100% - 90px) / 4);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 
     &__item {
-        width: calc((100% - 90px) / 4);
-        margin-right: 30px;
+        margin: 15px;
+
+
+        @media screen and (min-width: 768px) {
+            // flex-basis: calc((100% - количество марджинов в строке * значение марджина) / кол-во элементов в строке);
+            width: calc((100% - 4 * 15px) / 2);
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+
+
+        }
     }
 
-    &__item:last-child {
-        margin-right: 0px;
-    }
+    // &__item:last-child {
+    //     margin-right: 0px;
+    // }
 
     &__title {
         margin-top: 0;
@@ -40,14 +43,25 @@
 
     &__link {
         @include centeredFlex(flex);
-        width: 270px;
         height: 120px;
         background: var(--section-icon-bg-color);
         border-radius: 4px;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+
+        }
     }
 
-    // Проверить
     &__icon {
         fill: currentColor;
     }
@@ -72,7 +86,7 @@
 .work-label {
     padding: 27px;
     position: absolute;
-    width: 370px;
+    width: 100%;
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
 
@@ -84,34 +98,63 @@
     }
 }
 
-.section.bg {
-    background-color: var(--section-icon-bg-color);
-}
+
 
 // Наша команда
 .team-list {
-    display: flex;
-    margin-bottom: 0px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
     &__item {
-        margin-right: 30px;
-
+        width: 100%;
         background-color: var(--white-main-color);
-
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+
+        @media screen and (min-width: 480px) {
+            // font-size: 28px;
+            // line-height: 1.18;
+            // margin-right: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 8 * 15px) / 4);
+            margin: 15px;
+            // font-size: 36px;
+            // line-height: 1.16;
+            // margin-bottom: 50px;
+        }
+
+        &:not(:last-child) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+
     }
 
     &__title {
         margin-top: 0;
         margin-bottom: 10px;
-
         font-weight: 500;
         font-size: 16px;
         text-align: center;
-
         color: var(--secendary-text-color);
+
+
+
     }
 
     &__text {
@@ -126,23 +169,50 @@
 
 .client-title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    @media screen and (min-width: 480px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        // flex-basis: calc((100% - 2 * 30px) / 3);
+        margin: -15px;
+
+    }
 }
 
 .client-item {
-    width: 170px;
+    margin: 15px;
+    width: 100%;
     height: 92px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+
+    // @media screen and (min-width: 480px) {
+    //     flex-direction: row;
+    // }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+        margin: 15px;
+    }
+
+
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 
     &__link {
         @include centeredFlex(flex);
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         color: #AFB1B8;
-        width: 100%;
         height: 100%;
         fill: currentColor;
         transition: var(--transition);
