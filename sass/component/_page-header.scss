@@ -116,8 +116,6 @@
 
     @media screen and (max-width: 767px) {
         display: none;
-
-
     }
 
     @media screen and (min-width: 768px) {
@@ -130,8 +128,8 @@
         margin-left: auto;
     }
 
-    &__item+&__item {
 
+    &__item+&__item {
         @media screen and (min-width: 1200px) {
             margin-left: 50px;
         }
@@ -146,5 +144,12 @@
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
         transition: var(--transition);
+    }
+
+
+    .contacts__item:not(:last-child) {
+        @media screen and (min-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
 }
