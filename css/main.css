@@ -297,6 +297,7 @@ a {
 }
 
 .contacts-item__link.tel {
+  display: block;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -304,13 +305,12 @@ a {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 64px;
 }
 
 .menu-container__social {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
 .mob-social__item {
