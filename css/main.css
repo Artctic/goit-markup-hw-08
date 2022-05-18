@@ -203,12 +203,12 @@ a {
 }
 
 .menu-toggle {
+  margin-left: auto;
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -232,9 +232,11 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -248,8 +250,8 @@ a {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   color: #fff;
 }
 
@@ -259,8 +261,7 @@ a {
   list-style: none;
 }
 
-.mobile-menu .link {
-  display: block;
+.menu-container__link {
   padding: 10px;
   text-decoration: none;
   font-weight: 500;
@@ -270,8 +271,18 @@ a {
   color: #212121;
 }
 
-.mob-social__list {
+.menu-container__nav {
+  margin-bottom: auto;
+}
+
+.menu-container__contacts {
+  margin-bottom: 30px;
+}
+
+.menu-container__social {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Button "Заказасть услугу" */
@@ -430,16 +441,19 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 77px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /* Навигация(Кнопки) */
-.main-nav {
-  display: flex;
-}
-
 @media screen and (min-width: 768px) {
   .main-nav {
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -470,8 +484,10 @@ a {
   align-items: center;
 }
 
-.site-nav {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -522,8 +538,10 @@ a {
   border-radius: 2px;
 }
 
-.contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {

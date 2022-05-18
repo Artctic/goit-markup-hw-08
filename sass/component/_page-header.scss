@@ -5,15 +5,22 @@
     width: 100%;
     top: 0;
     left: 0;
-    min-height: 77px;
+
+    // min-height: 77px;
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
+
 
 /* Навигация(Кнопки) */
 
 .main-nav {
-    display: flex;
+
 
     @media screen and (min-width: 768px) {
+        display: flex;
         align-items: center;
         justify-content: space-between;
     }
@@ -43,8 +50,11 @@
 }
 
 .site-nav {
-    display: none;
 
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -103,8 +113,10 @@
 
 
 .contacts {
-    display: none;
 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
