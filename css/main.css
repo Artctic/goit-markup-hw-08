@@ -329,6 +329,10 @@ a {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.flex-shrink {
+  flex-shrink: 0;
+}
+
 /* Button "Заказасть услугу" */
 .hero__button {
   padding: 10px 32px;
@@ -1116,10 +1120,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .form-follower__label {
   margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1411,6 +1420,7 @@ a {
 
 .checkbox-label__link {
   color: var(--secendary-accent-color);
+  flex-shrink: 0;
 }
 
 .checkbox-label__input:hover + .checkbox-label__icon {

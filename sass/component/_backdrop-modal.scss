@@ -256,6 +256,7 @@
 
     &__link {
         color: var(--secendary-accent-color);
+        flex-shrink: 0
     }
 }
 
