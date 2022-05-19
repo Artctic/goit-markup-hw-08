@@ -1,8 +1,7 @@
 .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: url(../images/Mob-Header.jpg);
-    // linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(../images/Mob-Header.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-color: var(--hero-footer-bg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-size: cover;
@@ -17,30 +16,33 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/Mob-Header@2x.jpg);
+        background-image: url(../images/Mob-Header@2x.jpg),
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     }
 
     @media screen and (min-width: 480px) {
-        background-image: url(../images/tablet-header.jpg);
+        background-image: url(../images/tablet-header.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        ;
 
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/tablet-Header@2x.jpg)
+            background-image: url(../images/tablet-Header@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
         }
 
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(../images/desk-header.jpg);
+        background-image: url(../images/desk-header.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        ;
         padding-top: 200px;
         padding-bottom: 200px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/desk-header@2x.jpg)
+            background-image: url(../images/desk-header@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
         }
 
     }
