@@ -27,6 +27,7 @@
     <div class="main-nav container">
       <nav class="nav">
         <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+
         <ul class="site-nav">
           <li class="site-nav__item">
             <a href="./index.html" class="site-nav__link">Студия</a>
@@ -39,15 +40,12 @@
           </li>
         </ul>
 
-        <button class="menu-button is-open" type="button" data-menu-button aria-expanded="false"
-          aria-controls="menu-container">
+        <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/icons.svg/sprite.svg#icon-CloseBurger"></use>
             <use class="icon-menu" href="./images/icons.svg/sprite.svg#icon-Burger"></use>
           </svg>
         </button>
 
-        <div class="menu-container" id="menu-container" data-menu>Контекст меню</div>
       </nav>
 
       <ul class="contacts list">
@@ -129,7 +127,7 @@
                               ./images/basketball@2x.jpg 740w,
                               ./images/basketball@2x.jpg 708w,
                               ./images/basketball@2x.jpg 900w"
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   src="./images/basketball.jpg" alt="Баскетболисты" width="370" />
               </div>
               <div class="text-block">
@@ -169,13 +167,12 @@
                   сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 <!-- <img src="./images/img-3.jpg" alt="Наушники" width="370" /> -->
                 <img srcset="
-                                                              ./images/headset.jpg 370w,
-                                                              ./images/headset.jpg 354w,
-                                                              ./images/headset.jpg 450w,
-                                                              ./images/headset@2x.jpg 740w,
-                                                              ./images/headset@2x.jpg 708w,
-                                                              ./images/headset@2x.jpg 900w"
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+./images/headset.jpg 370w,
+./images/headset.jpg 354w,
+./images/headset.jpg 450w,
+./images/headset@2x.jpg 740w,
+./images/headset@2x.jpg 708w,
+./images/headset@2x.jpg 900w" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
                   src="./images/headset.jpg" alt="Наушники" width="370" />
               </div>
               <div class="text-block">

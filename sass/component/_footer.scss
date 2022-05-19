@@ -71,6 +71,12 @@
     text-align: center;
     margin-bottom: 60px;
 
+    .soc-list {
+        justify-content: flex-start;
+    }
+
+
+
     // для 1200px
     // margin-right: 70px;
     @media screen and (min-width: 1200px) {
@@ -78,6 +84,7 @@
         margin-right: 70px;
         text-align: start;
         margin-bottom: 0;
+        min-width: 231px;
     }
 }
 
@@ -89,6 +96,7 @@
 
 .footer__title {
     display: block;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -112,7 +120,9 @@
 
         @media screen and (min-width: 1200px) {
             margin-bottom: 0;
-
+            width: 358px;
+            align-items: normal;
+            margin-right: 12px;
         }
     }
 
@@ -173,4 +183,6 @@
     &:focus {
         border: 1px solid rgba(255, 255, 255, 0.7);
     }
+
+
 }

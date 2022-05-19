@@ -629,8 +629,8 @@ a {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: url(../images/Mob-Header.jpg);
   background-color: var(--hero-footer-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -664,6 +664,8 @@ a {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../images/desk-header.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1092,12 +1094,17 @@ a {
   margin-bottom: 60px;
 }
 
+.footer-item .soc-list {
+  justify-content: flex-start;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-item {
     align-items: normal;
     margin-right: 70px;
     text-align: start;
     margin-bottom: 0;
+    min-width: 231px;
   }
 }
 
@@ -1109,6 +1116,7 @@ a {
 
 .footer__title {
   display: block;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1134,6 +1142,9 @@ a {
 @media screen and (min-width: 1200px) {
   .form-follower__label {
     margin-bottom: 0;
+    width: 358px;
+    align-items: normal;
+    margin-right: 12px;
   }
 }
 
@@ -1336,7 +1347,7 @@ a {
 
 .modal .form-modal__comment {
   font-size: 12px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   display: block;
   margin-bottom: 20px;
@@ -1421,6 +1432,7 @@ a {
 .checkbox-label__link {
   color: var(--secendary-accent-color);
   flex-shrink: 0;
+  text-decoration: underline;
 }
 
 .checkbox-label__input:hover + .checkbox-label__icon {
